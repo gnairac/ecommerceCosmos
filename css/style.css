@@ -31,7 +31,7 @@ footer {
     flex-direction: column;
     padding-top: 1rem;
     margin-top: auto;
-    width: 100%;    
+    width: 100%;
 }
 
 img {
@@ -47,28 +47,16 @@ h1 {
     font-weight: 600;
     margin-top: 3rem;
     padding-top: 2rem;
-    margin-bottom: 0rem;    
+    margin-bottom: 0rem;
 }
-
-/* .seccionCategorias h1 DANIELA{
-    font-weight: 600;
-    margin-top: 3rem;
-    padding-top: 2rem;
-    margin-bottom: 0rem; 
-} */
 
 h2 {
     color: #510081;
     text-align: center;
     font-size: 4rem;
-    margin-top: 2rem;     
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
-
-/* .seccionCategorias h2 DANIELA{
-    margin-top: 0rem;
-    font-weight: 100;
-    font-size: 1.9rem; 
-} */
 
 h3 {
     color: #510081;
@@ -82,14 +70,14 @@ h4 {
     color: aliceblue;
     text-align: left;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;    
+    font-size: 1.5rem;
 }
 
 h5 {
     color: white;
     text-align: center;
     font-size: 1.2rem;
-    margin:1rem;   
+    margin: 1rem;
 }
 
 /*Estilos Navegador*/
@@ -109,18 +97,18 @@ nav {
     height: 7.5rem;
 }
 
-.logo:hover{
+.logo:hover {
     transform: scale(1.2);
 }
 
-nav ul{
+nav ul {
     margin-left: 20rem;
     padding-top: 3rem;
 }
 
-nav ul li{
-    display: inline-block; 
-    position: relative;   
+nav ul li {
+    display: inline-block;
+    position: relative;
     margin: 0.5rem 1rem 1rem 0rem;
 }
 
@@ -128,10 +116,11 @@ nav ul li a {
     color: #510081;
     font-size: 1.8rem;
     padding: 0.7rem 1.6rem 0.7rem 0rem;
-    border-radius: 0.3rem;      
+    border-radius: 0.3rem;
 }
 
-li a.active, li a:hover {
+li a.active,
+li a:hover {
     color: #e298c4;
 }
 
@@ -161,76 +150,16 @@ nav ul ul {
     color: #510081;
     font-size: 1.5rem;
     padding: 0.7rem 1.3rem 0.7rem 0rem;
-    line-height: 1.5rem;
+    line-height: 1.2rem;
     margin-left: 0;
 }
 
 nav ul li:hover>ul {
-    display: block;   
+    display: block;
 }
 
 ul.subMenu li:hover {
-    color: #e298c4;    
-}
-
-/*Estilo Contenedor Redes Sociales*/
-.red {
-    position: fixed;   
-    top: 20rem;   
-    z-index: 100;   
-    left: 0;    
-}
-
-#facebook a {
-    background: #5AA9C2; 
-    padding: 1rem 2.5rem;
-    color: #fff;
-    text-decoration: none;
-    width: 6rem;
-    transition: all .4s ease;
-    border-radius: 0px 30px 0px 0px; 
-    border: 1px solid #cad3dc;
-    border-color: #5AA9C2;
-}
-
-#facebook a:hover {
-    background: #000;   
-    padding: 1rem 5rem;   
-    border-color: #000;
-}
-
-#instagram a {
-    background: #F20B61;     
-    padding: 1rem 2rem;    
-    color: #fff;   
-    text-decoration: none;   
-    width: 6rem;
-    transition: all .4s ease;    
-    border-color: #F20B61; 
-}
-
-#instagram a:hover {
-    background: #000;
-    padding: 1rem 5rem;
-    border-color: #000;
-}
-
-#correo a {
-    background: #510081;
-    padding: 1rem 2rem;
-    color: #fff;
-    text-decoration: none;
-    width: 6rem;   
-    transition: all .4s ease; 
-    border-radius: 0px 0px 30px 0px; 
-    border: 1px solid #cad3dc;
-    border-color: #510081;
-}
-
-#correo a:hover {
-    background: #000;   
-    padding: 1rem 5rem;    
-    border-color: #000;
+    color: #e298c4;
 }
 
 .caja-1 {
@@ -243,25 +172,25 @@ ul.subMenu li:hover {
     font-size: large;
 }
 
-form > div {
+form>div {
     display: flex;
     background: #fff;
     padding: 0.8rem 2.2rem 0.8rem 2.6rem;
     border-radius: 3rem;
     border: 0.1rem solid #cad3dc;
     border-color: #510081;
-    margin-top: 0.8rem;     
+    margin-top: 0.8rem;
 }
 
 .lupa {
-    height: 1.5rem;  
+    height: 1.5rem;
 }
 
-form input{
+form input {
     border: none;
-    background-color: white;      
+    background-color: white;
     outline: none;
-} 
+}
 
 .checkbtn {
     font-size: 3rem;
@@ -287,99 +216,18 @@ form {
     margin-left: 0.5rem;
 }
 
-/*Estilos Footer*/
-#pie {
-    height: 15rem;
-    background-color: #510081;
+/*Estilos banner*/
+.botonBanner {
+    margin-top: -12rem;
+    margin-left: 16rem;
+    position: absolute;
 }
 
-.contenedorFooter1 {
-    width: 100%; 
-    padding: 0.7rem;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    justify-items: center;
-    align-items: baseline;
-    grid-gap: 2rem;
-}
-
-.contenedorFooter1.footer1.sobreNosotros{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;    
-}
-
-.contenedorFooter1 p{
-    font-size: 1.5rem;
-    color: #efefef;    
-    text-align: left;
-    margin-top: 1rem;
-}
-
-.footerLinks {    
-    list-style: none;
-    font-size: 1.5rem;
-    line-height: 2.1rem;
-}
-
-.footerLinks a{
-    color: white;
-}
-
-.contenedorFooter2{  
-    color: #000;   
-    background-color: #38005a;
-    height: 7rem;
-    border-color:#38005a;
-    padding: 0.5rem;
-}
-
-.financiacion {
-    margin-left: -0.5rem;
-    margin-top: 0.3rem;
-    width: 40%; 
-}
-
-#whatsapp a {
-    background: #00A884;   
-    padding: 1.5rem 2rem;    
-    color: #fff;    
-    text-decoration: none; 
-    width: 5.5rem;   
-    height: 5rem;
-    transition: all .4s ease;    
-    position: fixed;
-    bottom: 1.2rem;
-    right: 0;
-    border-radius: 5rem;
-}
-
-#whatsapp a:hover {
-    background: #000;   
-    padding: 1.5rem 2.2rem;    
-}
-
-.banner{
-    width: 100%;
-    height: 50rem;  
-    background-image: url(/img/BANNER\ XIAOMI.jpg);
-    background-repeat: no-repeat;
-    background-size: 130rem; 
-    background-position: bottom left;
-}
-
-.botonBanner{  
-    margin-top: 38rem;
-    margin-left: 15rem;
-    position: absolute; 
-}
-
-.compraAqui{
+.compraAqui {
     background-color: white;
-    border: 0.2rem solid #510081 ;
+    border: 0.2rem solid #510081;
     padding: 1rem 3.3rem;
-    color:#510081;
+    color: #510081;
     border-radius: 5rem;
     font-size: 1.5rem;
     width: max-content;
@@ -389,67 +237,6 @@ form {
     background-color: #510081;
     color: white;
     font-weight: bold;
-}
-
-/*Estilos Formulario de Registro*/
-.contenedorRegistro {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 42rem;
-    background-color: #f1e1f7;
-    padding: 2.5rem;
-    margin: 1rem auto 2.5rem auto;
-    border-radius: 1rem;
-    box-shadow: 0.7rem 1rem 0.4rem #646363;
-}
-
-.tituloFormulario {
-    font-size: 2.3rem;
-    font-weight: bold;
-    margin-bottom: 1.5rem;
-    text-align: center;
-}
-
-.input {
-    width: 100%;
-    background-color: #f7f2f2;
-    padding: 0.6rem;
-    border-radius: 0.4rem;
-    margin-bottom: 1.5rem;
-    border: 0.3rem solid #f7f2f2;
-    font-size: 1.5rem;
-    color: rgb(53, 52, 52);
-}
-
-.contenedorRegistro p {
-    height: 2.5rem;
-    text-align: center;
-    font-size: 1.3rem;
-    line-height: 2.5rem;
-}
-
-.contenedorRegistro a:hover {
-    color: blue;
-    text-decoration: underline;
-}
-
-.botonFormulario {
-    width: 100%;
-    background: linear-gradient(90deg, hsla(297, 64%, 51%, 1) 0%, hsla(248, 57%, 40%, 1) 100%);
-    border: none;
-    padding: 1.2rem;
-    font-size: 1.4rem;
-    letter-spacing: 0.07rem;
-    color: white;
-    font-weight: bold;
-    margin: 1rem 0;
-    cursor: pointer;
-}
-
-.botonFormulario:hover {
-    color: #e298c4;
 }
 
 /* Estilo de grif card*/
@@ -472,10 +259,10 @@ form {
     margin-top: 8rem;
     position: relative;
     cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.25) 0rem 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0rem 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0em 0em 0em 0.1em inset; /*DANIELA cambie este shadow*/
+    box-shadow: rgba(0, 0, 0, 0.25) 0rem 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0rem 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0em 0em 0em 0.1em inset;
 }
 
-.descuento { 
+.descuento {
     position: absolute;
     top: 4rem;
     left: 0;
@@ -484,17 +271,16 @@ form {
     color: #fff;
     width: 6rem;
     border-radius: 0rem 2rem 2rem 0rem;
-    font-size:1.5rem;
+    font-size: 1.5rem;
 }
 
 span {
-    font-size: 1.7rem;
-    color: #cc2b5e;
+    color: #F400A1;      
 }
 
 .box img {
     width: 80%;
-    padding-top: 4rem; 
+    padding-top: 4rem;
     transition: all 400ms;
 }
 
@@ -502,7 +288,7 @@ span {
     font-size: 1.5rem;
     margin-top: 1rem;
     transition: all 500ms;
-    color:#333;
+    color: #333;
 }
 
 .botonProducto {
@@ -518,7 +304,7 @@ span {
     padding: 0.3rem;
 }
 
-.botonProducto:hover{
+.botonProducto:hover {
     background-color: #510081;
     color: white;
     border: 0.2rem solid #510081;
@@ -547,12 +333,12 @@ span {
     padding: 0.5rem;
 }
 
-.box:hover .descuento{
+.box:hover .descuento {
     background-color: white;
 }
 
 .box:hover {
-    box-shadow: 0.5rem 0.4rem 0.4rem #646363; 
+    box-shadow: 0.5rem 0.4rem 0.4rem #646363;
 }
 
 .box:hover img {
@@ -563,7 +349,7 @@ span {
     transform: translateY(-90px);
     color: #510081;
     margin-bottom: 0;
-    font-size: 1.8rem; 
+    font-size: 1.8rem;
 }
 
 .box:hover .containerP p {
@@ -573,38 +359,72 @@ span {
 }
 
 /*Estilos contenedor Categorías*/
-.seccionCategorias{
-    background-color: #ecc6dd; 
-    height: 53rem; 
+.seccionCategorias {
+    background-color: #ecc6dd;
+   /*DANIELA height: 53rem;*/
+    width: 100%;
+    padding-bottom: 1rem;
+    overflow: hidden;
 }
 
-.contenedorCategorias {
+.seccionCategorias .main-card{
+    width: 200%;
+    display: flex;
+    justify-content: space-evenly;
+   /* DANIELA animation: cambio 8s infinite alternate ease-in-out; */
+    transition: all 1s ease;
+}
+
+#two:checked ~ .main-card{
+    margin-left: -100%;
+}
+
+/*DANIELA @keyframes cambio {
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+    50%{margin-left: -100%;}
+    100%{margin-left: -100%;}}
+  /*25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}*/
+
+.main-card .contenedorCategorias{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly; 
-    width: 100%;
-    height: 40rem;   
-    margin: 9rem auto 6rem auto;
+    justify-content: space-evenly;
+    width: calc(100% / 2 - 1rem);
+    /* DANIELA margin: 9rem auto 6rem auto; */
+    margin: 9rem 2rem 6rem 2rem;
 }
 
-.categoria {
-    display:flex; 
-    flex-wrap: wrap; 
-    align-content: center; 
+.main-card .contenedorCategorias .categoria{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
     width: 36rem;
-    height: 25rem; 
-    margin-top: 0rem;   
+    height: 25rem;
+    margin-top: 0rem;
     background: linear-gradient(90deg, hsla(248, 57%, 40%, 1) 0%, hsla(297, 64%, 51%, 1) 100%);
     border-radius: 2rem;
     position: relative;
     cursor: pointer;
-    box-shadow: 0.5rem 0.4rem 0.4rem #646363;    
+    box-shadow: 0.5rem 0.4rem 0.4rem #646363;
     justify-content: center;
+    transition: all 0.2s ease;
 }
 
-.imgCategoria{
-    width: 95%;  
-    padding-left: 2rem;    
+/*Estilos Slider Categorías*/
+.main-card .contenedorCategorias .categoria:hover{
+    transform: translateY(-15px);
+}
+
+.imgCategoria {
+    width: 95%;
+    padding-left: 2rem;
 }
 
 .botonCategoria {
@@ -616,13 +436,57 @@ span {
     font-weight: bold;
     color: #510081;
     margin-inline: 7rem;
-    margin-top: 2rem;
+    margin-top: 1rem; /*DANIELA margin-top: 2rem;*/
     padding: 0rem 3rem;
 }
 
-.botonCategoria:hover, .botonCategoria:active {
+.botonCategoria:hover,
+.botonCategoria:active {
     color: white;
     background-color: #510081;
+}
+
+.button{
+    display: flex;
+    margin: 4rem;
+    justify-content: center;
+}
+
+.button label{
+    height: 1.5rem;
+    width: 1.5rem;
+    background:#7d2ae8;
+    /* DANIELA background:#fff; */
+    margin: 0 0.4rem;
+    border-radius: 2rem;
+    transition: all 0.5s ease;
+}
+
+.button label:hover{
+    background: #510081;
+}
+.button label.active{
+    width: 3.5rem;
+}
+
+#one:checked ~ .button label.one{
+    width: 3.5rem;
+}
+
+#two:checked ~ .button label.two{
+    width: 3.5rem;
+}
+
+#one:checked ~ .button label.two{
+    width: 1.5rem;
+}
+
+#two:checked ~ .button label.one{
+    width: 1.5rem;
+}
+
+input[type="radio"]{
+    display: none;
 }
 
 /*Estilos contenedor Marcas*/
@@ -648,787 +512,370 @@ span {
 }
 
 .marca3 {
-    width: 10rem ;
+    width: 10rem;
     height: 7.5rem;
 }
 
-/*Estilo sección Conocenos*/
-.conocenos {
-    height: max-content;
-    margin:2rem auto 4rem auto;
+/*Estilos Footer*/
+#pie {
+    height: 15rem;
+    background-color: #510081;
+}
+
+.contenedorFooter1 {
+    width: 100%;
+    padding: 0.7rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: baseline;
+    grid-gap: 2rem;
+}
+
+.contenedorFooter1.footer1.sobreNosotros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.contenedorFooter1 p {
+    font-size: 1.5rem;
+    color: #efefef;
+    text-align: left;
+    margin-top: 1rem;
+}
+
+.footerLinks {
+    list-style: none;
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+}
+
+.footerLinks a {
+    color: white;
+}
+
+.contenedorFooter2 {
+    color: #000;
+    background-color: #38005a;
+    height: 7rem;
+    border-color: #38005a;
+    padding: 0.5rem;
+}
+
+.financiacion {
+    margin-left: -0.5rem;
+    margin-top: 0.3rem;
+    width: 40%;
+}
+
+#whatsapp a {
+    background: #00A884;
+    padding: 1.5rem 2rem;
+    color: #fff;
+    text-decoration: none;
+    width: 5.5rem;
+    height: 5rem;
+    transition: all .4s ease;
+    position: fixed;
+    bottom: 1.2rem;
+    right: 0;
+    border-radius: 5rem;
+}
+
+#whatsapp a:hover {
+    background: #000;
+    padding: 1.5rem 2.2rem;
+}
+
+/*Estilo sección Conocenos*/    
+.contenedorTituloConocenos {
+    margin: 3rem 3rem 0rem 3rem;
+}
+
+.contenedorConocenos {
+    height: max-content;  
+}
+
+hr {
+    color: #510081;   
+    text-align: center;
+    margin: auto 4rem;
+    border: 0.1rem solid #510081;
+    
 }
 
 /*Estilos parrafos*/
 .contenedorParrafo {
-    margin: 2.5rem;
-    /* width: calc(100%-70rem); */
-    ;    
+    margin: 2rem 6rem; 
 }
 
 .parrafoSomos {
     font-size: 1.7rem;
     text-align: justify;
     line-height: 2.5rem;
-    color: #474747;
+    color: #510081;
     font-weight: 500;
     margin: 2rem 4.5rem;
 }
 
-/*Estilos de la galeria*/
+/*Estilo sección Equipo*/
+.contenedorNosotras{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 40rem;
+    padding: 2rem;
+    grid-gap:2rem;
+    margin: 2rem 8rem 6rem 8rem; 
+}
+
+.contenedorEquipo {
+    background-color: #510081;
+    border-radius: 2rem;
+    height: 45rem;
+}
+
+.avatar {
+    margin: 1.2rem 5rem 0rem 5rem;
+    width: 60%;
+}
+
+.botonDev {
+    background-color: white;
+    border: 0.2rem solid #510081;
+    border-radius: 3rem;
+    height: 4rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #510081;
+    margin: 0rem 4rem;
+    padding: 0rem 1rem;
+    width: 20rem;
+}
+
+.parrafoDevs {
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 2rem;
+    color: white;
+    font-weight: 500;
+    margin: 1rem 3rem;
+}
+
+/*Estilos de la galeria de Html Categoría de Productos*/
 .galeria-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 15rem;
+    grid-auto-rows: 50rem;
     padding: 2rem;
-    grid-gap:2rem;
-    margin: 1rem 2rem 4rem 2rem;   
+    grid-gap:4rem;
+    margin: 5rem 5rem 0rem 5rem;   
 }
 
-.galeria-item{
-position: relative;
+.categoria1{
+    position: relative;
+    background-image: url(https://i.postimg.cc/MGLfz0Qf/electrodomesticos.webp);
+    background-position-y: 0.5rem;
+    background-size: contain;
+    background-repeat: no-repeat;  
+    margin: 1rem 2rem;
+    width: 85%;  
 }
 
-.gallery_img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.categoria2{
+    position: relative;
+    background-image: url(https://i.postimg.cc/C1YTBXD3/computadoras.webp);
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 1rem 2rem;
+    width: 95%;        
 }
 
-.galeria_title{
-    position: absolute;
-    bottom: 0;
+.categoria3{
+    position: relative;
+    background-image: url(https://i.postimg.cc/yN2xMVMF/audio.webp);      
+    background-position-y: 3rem;
+    background-size: contain;
+    background-repeat: no-repeat;   
+    margin: 1rem 2rem;
+    width: 105%;       
+}
+
+.categoria4{
+    position: relative;
+    background-image: url(https://i.postimg.cc/C1wG3xCR/tv.webp); 
+    background-position-y: 2.5rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 2rem;
+    width: 90%; 
+}
+
+.categoria5{
+    position: relative;
+    background-image: url(https://i.postimg.cc/zG6qBxxN/reloj.webp);
+    background-position-y: -0.5rem;
+    background-size: contain;
+    background-repeat: no-repeat;  
+    margin: 2rem;
+    width: 85%;    
+}
+
+.categoria6{
+    position: relative;
+    background-image: url(https://i.postimg.cc/HLkbYsvR/camara.webp);
+    background-position-y: -2rem;
+    background-size: contain;
+    background-repeat: no-repeat;  
+    margin: 2rem;
+    width: 90%; 
+}
+
+.botonCategoria1 {
+    background-color: transparent;
+    border: 0.2rem solid #510081;
+    border-radius: 5rem;
+    height: 4rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #510081;
+    margin-inline: 8rem;
+    margin-top: 40rem;
+    padding: 0rem 3rem;
+    width: max-content;
+}
+
+.botonCategoria1:hover, .botonCategoria:active {
     color: white;
-    background:linear-gradient(rgba(255,255,255,0.5),rgba(0,0,0,1));
+    background-color: #510081;
+}
+
+.botonCategoria2 {
+    background-color: transparent;
+    border: 0.2rem solid #510081;
+    border-radius: 5rem;
+    height: 4rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #510081;
+    margin: 35rem 5rem 2rem 10rem;
+    padding: 0rem 3rem;
+    width: max-content;
+}
+
+.botonCategoria2:hover, .botonCategoria:active {
+    color: white;
+    background-color: #510081;
+}
+
+.botonCategoria3 {
+    background-color: transparent;
+    border: 0.2rem solid #510081;
+    border-radius: 5rem;
+    height: 4rem;
     width: 100%;
-    margin: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #510081;
+    margin: 35rem 2rem 2rem 10rem;  
+    padding: 0rem 3rem;
+    width: max-content;
 }
 
-.galeria-item:nth-child(4){
-    /* grid-column-start: span 2; */
-    grid-row-start: span 2;
+.botonCategoria2:hover, .botonCategoria:active {
+    color: #510081;
+    background-color: white;
 }
 
-.galeria-item:nth-child(5){
-    grid-row-start: span 2;
+.botonBanner2 {
+    background-color: #510081;
+    border: 0.2rem solid #510081;
+    border-radius: 5rem;
+    height: 5rem;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin-top: -13rem;
+    margin-left: 7rem;
+    position: absolute; 
+    padding: 0rem 4rem;
+    width: max-content;
 }
 
-.galeria-item:nth-child(6){
-    grid-row-start: span 2;
+.botonBanner2:hover, .botonCategoria:active {
+    color: #510081;
+    background-color: white;
 }
 
-.galeria-item:nth-child(7){
+.categoriaBanner{    
     grid-column-start: span 3;
-    grid-row-start: span 2;
+    margin-bottom: 1rem;
 }
 
-/*Media queries RD Mobile First*/
-
-/*Celular pequeño*/
-@media (min-width: 320px) and (max-width: 360px) {
-    h1{
-        font-size:3rem;        
-    }
-
-    h2{
-        font-size:2.5rem;
-    }
-
-    h3{
-        font-size:1.5rem;
-        margin: 1rem;
-        line-height: 1.8rem;
-    }
-
-    .logo{
-        height: 7rem;
-        width: 95%;
-    }
-
-    .menu {
-        display: none;
-    }
-
-    .tituloFormulario {
-        font-size: 2rem;
-        margin-bottom: 1.6rem;        
-    }
-
-    .red {
-        display: none;
-    }
-
-    form {
-        display: none;
-    }
-
-    .input {
-        padding: 0.6rem;
-        border-radius: 0.4rem;
-        margin-bottom: 1rem;
-        border: 0.3rem solid #f7f2f2;
-        font-size: 1.2rem;  
-    }
-
-    .contenedorRegistro p {
-        height: 2rem;
-        font-size: 1.1rem;
-        line-height: 2rem;
-    }
-
-    .botonFormulario {     
-        font-size: 1.2rem;       
-    }
-
-    .banner {
-        display: none;
-    }
-
-    .seccionCategorias{         
-        height: 88rem; 
-        margin-bottom: 2rem;
-    }
-    
-    .contenedorCategorias {       
-        width: 100%;
-        height: 55rem;   
-        margin: 2rem auto 10rem auto;
-    }
-    
-    .categoria {
-        display:flex; 
-        flex-wrap: wrap; 
-        align-content: center; 
-        width: 25rem;
-        height: 20rem; 
-        margin-top: 3rem;          
-        border-radius: 1rem;
-        box-shadow: 0.5rem 0.4rem 0.4rem #646363;    
-        justify-content: center;
-    }
-    
-    .imgCategoria{
-        width: 80%;  
-        padding-left: 6rem;    
-    }
-    
-    .botonCategoria {
-        border: 0.1rem solid white;
-        border-radius: 3rem;
-        height: 3rem;
-        font-size: 1.2rem; 
-        color: white;       
-        margin-inline: 4rem;
-        margin-top: 1rem;
-        padding: 0rem 2.5rem;
-    }
-
-    .botonCategoria:hover, .botonCategoria:active {
-        color: white;
-        background-color: #510081;
-        border: #510081;
-    }
-
-    .contenedorLanzamiento {        
-        margin-bottom: 2rem;        
-    }
-    
-    .box {
-        width: 23rem;
-        height: 32rem;
-        margin: 1rem;
-        padding: 1rem;       
-        border-radius: 0.5rem;        
-        margin-top: 7rem;
-    }
-
-    .descuento { 
-        top: 2rem;        
-        width: 5rem;
-        font-size:1.2rem;
-    }
-    
-    span {
-        font-size: 1.3rem;        
-    }
-    
-    .box img {
-        width: 80%;
-        padding-top: 2rem;        
-    }
-    
-    .box h2 {
-        font-size: 1.5rem;
-        margin-top: 1rem;        
-    }
-    
-    .botonProducto {        
-        border: 0.1rem solid #510081;
-        border-radius: 0.5rem;       
-        margin: 4rem;
-        padding: 0.2rem;
-    }
-    
-    .containerP {
-        width: 100%;
-        height: 15rem;       
-        padding: 0 1rem;
-        line-height: 1.5rem;
-    }
-    
-    .box p {
-        font-size: 1.3rem;        
-        padding: 0.5rem;
-    }
-
-    .box:hover img {
-        transform: translateY(-75px);
-    }
-    
-    .box:hover h2 {
-        transform: translateY(-90px);
-        margin-top: 1.8rem;
-        font-size: 1.5rem; 
-    }
-    
-    .box:hover .containerP p {
-        transform: translateY(15px);  
-        font-size: 1.3rem;      
-    }
-
-    .contenedorMarcas {
-        height: 7rem;
-        padding: 1rem;
-        width: 95%;
-        justify-content: space-between;
-    }
-
-    .marca1 {
-        width: 4rem;
-        height: 4rem;
-    }
-    
-    .marca2 {
-        width: 6rem;
-        height: 4rem;
-    }
-    
-    .marca3 {
-        width: 6.5rem ;
-        height: 4.5rem;
-    }
-    
-
-    #pie {
-        padding: 0;  
-        height: fit-content;    
-    }
-
-    .contenedorFooter1 {
-        display: none;
-    }
-
-    .contenedorFooter2 h4 {
-        font-size: 1.1rem;
-    }
-
-    .contenedorFooter1.footer1.sobreNosotros{           
-        font-size: 1rem;          
-    }
-    
-    .contenedorFooter1 p{
-        font-size: 1.1rem;
-        text-align: left;
-        margin-bottom: 1rem;
-    }
-    
-    .footerLinks {  
-        font-size: 1.2rem;        
-    }
-    
-    .contenedorFooter2{       
-        height: 5rem;  
-        
-    }
-
-    .contenedorFooter2 h5 {
-        font-size: 1rem;  
-        margin:1rem, 0.5rem;       
-    
-    }
-
-    #whatsapp a {         
-        display: none;
-    }
-    .contenedorRegistro {
-        width: 30rem;
-        padding: 1.5rem;      
-    }
-
+/*Estilo Carrito de compras*/
+/* .scroll{
+    background-color: aliceblue;
+    box-shadow: .1rem .2rem .3rem #333;
+}
+.scroll img{
+    filter: invert(15%);
+}           
+.scroll h1{
+    color: #141C29;
+}
+.carrito{
+    filter: invert(100%);
+    width: 45px;
+    height: auto;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+.contenedor>div{
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    background-color: #2D4263;
+    border-radius: 20px;
+}
+.contenedor>div:hover{
+    background-color: #11294d;
 }
 
- /* Tablet-Ipad */
-@media (min-width: 360px) and (max-width: 768px) {
-    h1{
-        font-size:4rem;
-    }
-
-    h2{
-        font-size:3rem;        
-    }
-
-    h3{
-        font-size:2rem;
-        margin: 1rem;
-        line-height: 1.8rem;
-    }
-
-    .logo{
-        height: 7.2rem;
-        width: 95%;
-    }
-
-    .checkbtn {
-        display: none;
-    }
-
-    .menu {
-        display: block;
-        width: max-content;
-    }
-
-    nav ul{
-        margin-left: 16rem;       
-    }
-    
-    nav ul li{          
-        margin: 0.5rem 0rem 0.5rem 0rem;
-    }
-
-    nav ul li a {
-        padding: 0.7rem 1rem 0.7rem 0rem;}
-
-    .banner {
-        height: 30rem;
-        background-size: 68rem;
-    }
-
-    .botonBanner {
-        margin-top: 24rem;
-        margin-left:8rem ;
-    }
-
-    .compraAqui{
-    border: 0.1rem solid #510081;
-    padding: 0.5rem 1.5rem;
-    font-size: 1.2rem;
-    }
-
-    .seccionCategorias {
-        height: 82rem;
-    }
-
-    .contenedorCategorias {       
-        width: 100%;
-        height: 70rem;   
-        margin: 4rem auto 8rem auto;
-    }
-    
-    .categoria {
-        width: 30rem;
-        height: 30rem;       
-    }
-    
-    .imgCategoria{
-        width: 90%;  
-        padding-left: 4rem;    
-    }
-    
-    .botonCategoria {
-        border: 0.1rem solid white;
-        border-radius: 3rem;
-        height: 3rem;
-        font-size: 1.2rem; 
-        color: white;       
-        margin-inline: 4rem;
-        margin-top: 1rem;
-        padding: 0rem 2.5rem;
-    }
-
-    .botonCategoria:hover, .botonCategoria:active {
-        color: white;
-        background-color: #510081;
-        border: #510081;
-    }
-
-    .contenedorFooter1 {
-        margin-left: 2rem;
-    }
-    
-    .red {
-        display: none;
-    }
-
-    form {
-        display: none;
-    }
-} 
-
-@media (min-width: 768px) and (max-width: 900px) 
-{
-    h1{
-        font-size:4.5rem;
-    }
-
-    h2{
-        font-size:4rem;        
-    }
-
-    h3{
-        font-size:2rem;        
-    }
-
-    .logo{
-        width: 100%;
-        height: 8rem;
-    }
-
-    .checkbtn {
-        display: none;
-    }
-
-    nav ul{
-        margin-left: 20rem;       
-    }
-    
-    nav ul li{          
-        margin: 0.5rem 0rem 0.5rem 0rem;
-    }
-
-    nav ul li a {
-        padding: 0.7rem 1rem 0.7rem 0rem;
-        font-size: 2rem;}
-
-    form {
-        display: none;
-    }
-
-    .banner {
-        height: 40rem;
-        background-size: 80rem;
-    }
-
-    .botonBanner {
-        margin-top: 33rem;
-        margin-left:9rem ;
-    }
-
-    .compraAqui {
-        border-radius: 2rem;
-        padding: 0.7rem 2rem;
-        border: 0.1rem solid #510081;
-        font-size: 1.2rem;
-    }
-
-    .seccionCategorias {
-        height: 85rem;
-    }
-
-    .contenedorCategorias {       
-        width: 100%;
-        height: 70rem;   
-        margin: 4rem auto 8rem auto;
-    }
-    
-    .categoria {
-        width: 30rem;
-        height: 32rem;       
-    }
-    
-    .imgCategoria{
-        width: 90%;  
-        padding-left: 4rem;    
-    }
-    
-    .botonCategoria {
-        border: 0.2rem solid white;
-        border-radius: 3rem;
-        height: 3.5rem;
-        font-size: 1.5rem; 
-        color: white;       
-        margin-inline: 4rem;
-        margin-top: 1rem;
-        padding: 0.5rem 2.5rem;
-    }
-
-    .botonCategoria:hover, .botonCategoria:active {
-        color: white;
-        background-color: #510081;
-        border: #510081;
-    }
-    
-    .contenedorFooter1 {
-        margin-left: 3rem;
-        margin-bottom: 0.5rem;
-    }
+.informacion{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:15px;
+}
+.informacion>p:first-child{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+}
+.informacion .precio {
+    font-size: 20px;
+    font-weight: 500;
 }
 
-@media (min-width: 900px) and (max-width: 1024px) 
-{
-    h1{
-        font-size:5rem;
-    }
+.informacion button{
+    background-color: #263143;
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
 
-    h2{
-        font-size:4.2rem;        
-    }
-
-    h3{
-        font-size:2rem;        
-    }
-
-    .logo{
-        width: 100%;
-        height: 8.5rem;
-    }
-
-    .checkbtn {
-        display: block;
-    }
-
-    nav ul{
-        margin-left: 20rem;       
-    }
-    
-    nav ul li{          
-        margin: 0.3rem 0rem 0.5rem 0rem;
-    }
-
-    nav ul li a {
-        padding: 0.7rem 1rem 0.7rem 0rem;
-        font-size: 2rem;}
-
-    form {
-        display: none;
-    }
-
-    .banner {
-        height: 45rem;
-        background-size: 100rem;
-    }
-
-    .botonBanner {
-        margin-top: 36rem;
-        margin-left:11rem ;
-    }
-
-    .compraAqui {
-        border-radius: 2rem;
-        padding: 0.7rem 2.5rem;
-        border: 0.2rem solid #510081;
-        font-size: 1.5rem;
-    }
-
-    .seccionCategorias {
-        height: 52rem;
-    }
-
-    .contenedorCategorias {       
-        width: 100%;
-        height: 70rem;   
-        margin: 4rem auto 8rem auto;
-    }
-    
-    .categoria {
-        width: 30rem;
-        height: 32rem;       
-    }
-    
-    .imgCategoria{
-        width: 90%;  
-        padding-left: 4rem;    
-    }
-    
-    .botonCategoria {
-        border: 0.2rem solid white;
-        border-radius: 3rem;
-        height: 3.5rem;
-        font-size: 1.5rem; 
-        color: white;       
-        margin-inline: 4rem;
-        margin-top: 1rem;
-        padding: 0.5rem 2.5rem;
-    }
-
-    .botonCategoria:hover, .botonCategoria:active {
-        color: white;
-        background-color: #510081;
-        border: #510081;
-    }
-
-    .contenedorLanzamiento {        
-        margin-bottom: 3rem;        
-    }
-    
-    .box {
-        width: 25rem;        
-    }
-
-    .descuento { 
-        width: 7rem;
-        font-size:1.5rem;
-        top: 3rem;
-    }
-    
-    span {
-        font-size: 1.5rem;        
-    }
-    
-    .box img {
-        width: 85%;
-        padding-top: 2rem;        
-    }
-    
-    .box h2 {
-        font-size: 1.7rem;
-        margin-top: 1rem;        
-    }
-    
-    .botonProducto {        
-        border: 0.2rem solid #510081;
-        border-radius: 1rem;       
-        margin: 3rem;
-        padding: 0.5rem;
-    }
-    
-    .containerP {
-        width: 100%;
-        height: 15rem;       
-        padding: 0 0;
-        line-height: 1.7rem;
-    }
-    
-    .box p {
-        font-size: 1.7rem;        
-        padding: 0.5rem;
-    }
-
-    .box:hover img {
-        transform: translateY(-70px);
-    }
-    
-    .box:hover h2 {
-        transform: translateY(-80px);
-        margin-top: 1.8rem;
-        font-size: 1.7rem; 
-    }
-    
-    .box:hover .containerP p {
-        transform: translateY(15px);  
-        font-size: 1.5rem;      
-    }
-
-    .contenedorFooter1 {
-        margin-left: 3rem;
-        margin-bottom: 0.7rem;
-    }
+    font-size: 17px;
+    font-weight: 300;
+    cursor: pointer;
 }
-
-@media (min-width: 1024px) and (max-width: 1200px) 
-{
-    h3{
-        font-size:2.8rem;        
-    }
-
-    nav ul{
-        margin-left: 20rem;       
-    }
-    
-    nav ul li{          
-        margin: 0.3rem 0rem 0.5rem 0rem;
-    }
-
-    nav ul li a {
-        padding: 0.7rem 1rem 0.7rem 0rem;
-        font-size: 2rem;}
-
-    form {
-        display: block;
-        width: 18rem;
-    }
-
-    input {
-        width: 12rem;
-    }
-
-    .lupa {
-        width: 15%;
-    }
-
-    .banner {
-        height: 50rem;
-        background-size: 115rem;
-    }
-
-    .botonBanner {
-        margin-top: 40rem;
-        margin-left:13rem ;
-    }
-
-    .compraAqui {       
-        padding: 0.8rem 2.8rem; 
-    }
-
-    .seccionCategorias {
-        height: 63rem;
-    }
-
-    .contenedorCategorias {       
-        height: 75rem;   
-        margin: 4rem auto 7rem auto;
-    }
-    
-    .categoria {
-        width: 32rem;
-        height: 42rem;       
-    }
-    
-    .imgCategoria{
-        width: 95%;  
-        padding-left: 2rem;    
-    }
-    
-    .botonCategoria {
-        border: 0.2rem solid white;
-        border-radius: 3rem;
-        height: 4rem;
-        font-size: 1.7rem; 
-        color: white;       
-        margin-inline: 4rem;
-        margin-top: 3rem;
-        padding: 1rem 2.7rem;
-    }
-
-    .botonCategoria:hover, .botonCategoria:active {
-        color: white;
-        background-color: #510081;
-        border: #510081;
-    }
-
-    .botonProducto {        
-        border: 0.2rem solid #510081;
-        border-radius: 1rem;       
-        margin: 1.5rem;
-        height: 4rem;
-        padding: 1.1rem 2rem;
-        font-size: 1.6rem;
-        width: max-content;
-    }
-
-    .contenedorFooter1 {
-        margin-left: 3rem;
-        margin-bottom: 0.7rem;
-        font-size: 1.5rem;
-    }
-}
-
-
+.informacion button:hover{
+    background-color: #2D4263;
+} */

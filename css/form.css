@@ -1,0 +1,60 @@
+/*Estilos Formulario de Registro*/
+.contenedorRegistro {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 42rem;
+    background-color: #f1e1f7;
+    padding: 2.5rem;
+    margin: 1rem auto 2.5rem auto;
+    border-radius: 1rem;
+    box-shadow: 0.7rem 1rem 0.4rem #646363;
+}
+
+.tituloFormulario {
+    font-size: 2.3rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.input {
+    width: 100%;
+    background-color: #f7f2f2;
+    padding: 0.6rem;
+    border-radius: 0.4rem;
+    margin-bottom: 1.5rem;
+    border: 0.3rem solid #f7f2f2;
+    font-size: 1.5rem;
+    color: rgb(53, 52, 52);
+}
+
+.contenedorRegistro p {
+    height: 2.5rem;
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+}
+
+.contenedorRegistro a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.botonFormulario {
+    width: 100%;
+    background: linear-gradient(90deg, hsla(297, 64%, 51%, 1) 0%, hsla(248, 57%, 40%, 1) 100%);
+    border: none;
+    padding: 1.2rem;
+    font-size: 1.4rem;
+    letter-spacing: 0.07rem;
+    color: white;
+    font-weight: bold;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+.botonFormulario:hover {
+    color: #e298c4;
+}

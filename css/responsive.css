@@ -1,0 +1,696 @@
+/*Media queries RD Mobile First*/
+
+/*Celular pequeño*/
+@media (min-width: 320px) and (max-width: 360px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        margin: 1rem;
+        line-height: 1.8rem;
+    }
+
+    .logo {
+        height: 7rem;
+        width: 95%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .tituloFormulario {
+        font-size: 2rem;
+        margin-bottom: 1.6rem;
+    }
+
+    .red {
+        display: none;
+    }
+
+    form {
+        display: none;
+    }
+
+    .input {
+        padding: 0.6rem;
+        border-radius: 0.4rem;
+        margin-bottom: 1rem;
+        border: 0.3rem solid #f7f2f2;
+        font-size: 1.2rem;
+    }
+
+    .contenedorRegistro p {
+        height: 2rem;
+        font-size: 1.1rem;
+        line-height: 2rem;
+    }
+
+    .botonFormulario {
+        font-size: 1.2rem;
+    }
+
+    .banner {
+        display: none;
+    }
+
+    .seccionCategorias {
+        height: 88rem;
+        margin-bottom: 2rem;
+    }
+
+    .contenedorCategorias {
+        width: 100%;
+        height: 55rem;
+        margin: 2rem auto 10rem auto;
+    }
+
+    .categoria {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        width: 25rem;
+        height: 20rem;
+        margin-top: 3rem;
+        border-radius: 1rem;
+        box-shadow: 0.5rem 0.4rem 0.4rem #646363;
+        justify-content: center;
+    }
+
+    .imgCategoria {
+        width: 80%;
+        padding-left: 6rem;
+    }
+
+    .botonCategoria {
+        border: 0.1rem solid white;
+        border-radius: 3rem;
+        height: 3rem;
+        font-size: 1.2rem;
+        color: white;
+        margin-inline: 4rem;
+        margin-top: 1rem;
+        padding: 0rem 2.5rem;
+    }
+
+    .botonCategoria:hover,
+    .botonCategoria:active {
+        color: white;
+        background-color: #510081;
+        border: #510081;
+    }
+
+    .contenedorLanzamiento {
+        margin-bottom: 2rem;
+    }
+
+    .box {
+        width: 23rem;
+        height: 32rem;
+        margin: 1rem;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        margin-top: 7rem;
+    }
+
+    .descuento {
+        top: 2rem;
+        width: 5rem;
+        font-size: 1.2rem;
+    }
+
+    span {
+        font-size: 1.3rem;
+    }
+
+    .box img {
+        width: 80%;
+        padding-top: 2rem;
+    }
+
+    .box h2 {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .botonProducto {
+        border: 0.1rem solid #510081;
+        border-radius: 0.5rem;
+        margin: 4rem;
+        padding: 0.2rem;
+    }
+
+    .containerP {
+        width: 100%;
+        height: 15rem;
+        padding: 0 1rem;
+        line-height: 1.5rem;
+    }
+
+    .box p {
+        font-size: 1.3rem;
+        padding: 0.5rem;
+    }
+
+    .box:hover img {
+        transform: translateY(-75px);
+    }
+
+    .box:hover h2 {
+        transform: translateY(-90px);
+        margin-top: 1.8rem;
+        font-size: 1.5rem;
+    }
+
+    .box:hover .containerP p {
+        transform: translateY(15px);
+        font-size: 1.3rem;
+    }
+
+    .contenedorMarcas {
+        height: 7rem;
+        padding: 1rem;
+        width: 95%;
+        justify-content: space-between;
+    }
+
+    .marca1 {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .marca2 {
+        width: 6rem;
+        height: 4rem;
+    }
+
+    .marca3 {
+        width: 6.5rem;
+        height: 4.5rem;
+    }
+
+
+    #pie {
+        padding: 0;
+        height: fit-content;
+    }
+
+    .contenedorFooter1 {
+        display: none;
+    }
+
+    .contenedorFooter2 h4 {
+        font-size: 1.1rem;
+    }
+
+    .contenedorFooter1.footer1.sobreNosotros {
+        font-size: 1rem;
+    }
+
+    .contenedorFooter1 p {
+        font-size: 1.1rem;
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+
+    .footerLinks {
+        font-size: 1.2rem;
+    }
+
+    .contenedorFooter2 {
+        height: 5rem;
+
+    }
+
+    .contenedorFooter2 h5 {
+        font-size: 1rem;
+        margin: 1rem, 0.5rem;
+
+    }
+
+    #whatsapp a {
+        display: none;
+    }
+
+    .contenedorRegistro {
+        width: 30rem;
+        padding: 1.5rem;
+    }
+
+}
+
+/* Tablet-Ipad */
+@media (min-width: 360px) and (max-width: 768px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+        margin: 1rem;
+        line-height: 1.8rem;
+    }
+
+    .logo {
+        height: 7.2rem;
+        width: 95%;
+    }
+
+    .checkbtn {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        width: max-content;
+    }
+
+    nav ul {
+        margin-left: 16rem;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0rem 0.5rem 0rem;
+    }
+
+    nav ul li a {
+        padding: 0.7rem 1rem 0.7rem 0rem;
+    }
+
+    .botonBanner {
+        margin-top: -7rem;
+        margin-left: 10rem;
+    }
+
+    .compraAqui {
+        border: 0.1rem solid #510081;
+        padding: 0.5rem 1.5rem;
+        font-size: 1.2rem;
+    }
+
+    .seccionCategorias {
+        height: 82rem;
+    }
+
+    .contenedorCategorias {
+        width: 100%;
+        height: 70rem;
+        margin: 4rem auto 8rem auto;
+    }
+
+    .categoria {
+        width: 30rem;
+        height: 30rem;
+    }
+
+    .imgCategoria {
+        width: 90%;
+        padding-left: 4rem;
+    }
+
+    .botonCategoria {
+        border: 0.1rem solid white;
+        border-radius: 3rem;
+        height: 3rem;
+        font-size: 1.2rem;
+        color: white;
+        margin-inline: 4rem;
+        margin-top: 1rem;
+        padding: 0rem 2.5rem;
+    }
+
+    .botonCategoria:hover,
+    .botonCategoria:active {
+        color: white;
+        background-color: #510081;
+        border: #510081;
+    }
+
+    .contenedorFooter1 {
+        margin-left: 2rem;
+    }
+
+    .red {
+        display: none;
+    }
+
+    form {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+    h1 {
+        font-size: 4.5rem;
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    .logo {
+        width: 100%;
+        height: 8rem;
+    }
+
+    .checkbtn {
+        display: none;
+    }
+
+    nav ul {
+        margin-left: 20rem;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0rem 0.5rem 0rem;
+    }
+
+    nav ul li a {
+        padding: 0.7rem 1rem 0.7rem 0rem;
+        font-size: 2rem;
+    }
+
+    form {
+        display: none;
+    }
+
+    .botonBanner {
+        margin-top: -7rem;
+        margin-left: 9rem;
+    }
+
+    .compraAqui {
+        border-radius: 2rem;
+        padding: 0.7rem 2rem;
+        border: 0.1rem solid #510081;
+        font-size: 1.2rem;
+    }
+
+    .seccionCategorias {
+        height: 85rem;
+    }
+
+    .contenedorCategorias {
+        width: 100%;
+        height: 70rem;
+        margin: 4rem auto 8rem auto;
+    }
+
+    .categoria {
+        width: 30rem;
+        height: 32rem;
+    }
+
+    .imgCategoria {
+        width: 90%;
+        padding-left: 4rem;
+    }
+
+    .botonCategoria {
+        border: 0.2rem solid white;
+        border-radius: 3rem;
+        height: 3.5rem;
+        font-size: 1.5rem;
+        color: white;
+        margin-inline: 4rem;
+        margin-top: 1rem;
+        padding: 0.5rem 2.5rem;
+    }
+
+    .botonCategoria:hover,
+    .botonCategoria:active {
+        color: white;
+        background-color: #510081;
+        border: #510081;
+    }
+
+    .contenedorFooter1 {
+        margin-left: 3rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1024px) {
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 4.2rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    .logo {
+        width: 100%;
+        height: 8.5rem;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    nav ul {
+        margin-left: 20rem;
+    }
+
+    nav ul li {
+        margin: 0.3rem 0rem 0.5rem 0rem;
+    }
+
+    nav ul li a {
+        padding: 0.7rem 1rem 0.7rem 0rem;
+        font-size: 2rem;
+    }
+
+    form {
+        display: none;
+    }
+
+    .botonBanner {
+        margin-top: -8rem;
+        margin-left: 10rem;
+    }
+
+    .compraAqui {
+        border-radius: 2rem;
+        padding: 0.7rem 2.5rem;
+        border: 0.2rem solid #510081;
+        font-size: 1.5rem;
+    }
+
+    .seccionCategorias {
+        height: 52rem;
+    }
+
+    .contenedorCategorias {
+        width: 100%;
+        height: 70rem;
+        margin: 4rem auto 8rem auto;
+    }
+
+    .categoria {
+        width: 30rem;
+        height: 32rem;
+    }
+
+    .imgCategoria {
+        width: 90%;
+        padding-left: 4rem;
+    }
+
+    .botonCategoria {
+        border: 0.2rem solid white;
+        border-radius: 3rem;
+        height: 3.5rem;
+        font-size: 1.5rem;
+        color: white;
+        margin-inline: 4rem;
+        margin-top: 1rem;
+        padding: 0.5rem 2.5rem;
+    }
+
+    .botonCategoria:hover,
+    .botonCategoria:active {
+        color: white;
+        background-color: #510081;
+        border: #510081;
+    }
+
+    .contenedorLanzamiento {
+        margin-bottom: 3rem;
+    }
+
+    .box {
+        width: 25rem;
+    }
+
+    .descuento {
+        width: 7rem;
+        font-size: 1.5rem;
+        top: 3rem;
+    }
+
+    span {
+        font-size: 1.5rem;
+    }
+
+    .box img {
+        width: 85%;
+        padding-top: 2rem;
+    }
+
+    .box h2 {
+        font-size: 1.7rem;
+        margin-top: 1rem;
+    }
+
+    .botonProducto {
+        border: 0.2rem solid #510081;
+        border-radius: 1rem;
+        margin: 3rem;
+        padding: 0.5rem;
+    }
+
+    .containerP {
+        width: 100%;
+        height: 15rem;
+        padding: 0 0;
+        line-height: 1.7rem;
+    }
+
+    .box p {
+        font-size: 1.7rem;
+        padding: 0.5rem;
+    }
+
+    .box:hover img {
+        transform: translateY(-70px);
+    }
+
+    .box:hover h2 {
+        transform: translateY(-80px);
+        margin-top: 1.8rem;
+        font-size: 1.7rem;
+    }
+
+    .box:hover .containerP p {
+        transform: translateY(15px);
+        font-size: 1.5rem;
+    }
+
+    .contenedorFooter1 {
+        margin-left: 3rem;
+        margin-bottom: 0.7rem;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+    h3 {
+        font-size: 2.8rem;
+    }
+
+    nav ul {
+        margin-left: 20rem;
+    }
+
+    nav ul li {
+        margin: 0.3rem 0rem 0.5rem 0rem;
+    }
+
+    nav ul li a {
+        padding: 0.7rem 1rem 0.7rem 0rem;
+        font-size: 2rem;
+    }
+
+    form {
+        display: block;
+        width: 18rem;
+    }
+
+    input {
+        width: 12rem;
+    }
+
+    .lupa {
+        width: 15%;
+    }
+
+    .botonBanner {
+        margin-top: -10rem;
+        margin-left: 12rem;
+    }
+
+    .compraAqui {
+        padding: 0.8rem 2.8rem;
+    }
+
+    .seccionCategorias {
+        height: 63rem;
+    }
+
+    .contenedorCategorias {
+        height: 75rem;
+        margin: 4rem auto 7rem auto;
+    }
+
+    .categoria {
+        width: 32rem;
+        height: 42rem;
+    }
+
+    .imgCategoria {
+        width: 95%;
+        padding-left: 2rem;
+    }
+
+    .botonCategoria {
+        border: 0.2rem solid white;
+        border-radius: 3rem;
+        height: 4rem;
+        font-size: 1.7rem;
+        color: white;
+        margin-inline: 4rem;
+        margin-top: 3rem;
+        padding: 1rem 2.7rem;
+    }
+
+    .botonCategoria:hover,
+    .botonCategoria:active {
+        color: white;
+        background-color: #510081;
+        border: #510081;
+    }
+
+    .botonProducto {
+        border: 0.2rem solid #510081;
+        border-radius: 1rem;
+        margin: 1.5rem;
+        height: 4rem;
+        padding: 1.1rem 2rem;
+        font-size: 1.6rem;
+        width: max-content;
+    }
+
+    .contenedorFooter1 {
+        margin-left: 3rem;
+        margin-bottom: 0.7rem;
+        font-size: 1.5rem;
+    }
+}
