@@ -785,8 +785,8 @@ hr {
 }
 
 .botonCategoria3:hover, .botonCategoria3:active {
-    color: #510081;
-    background-color: white;
+    color: white;
+    background-color: #510081;
 }
 
 .botonBanner2 {
