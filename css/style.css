@@ -789,6 +789,7 @@ hr {
     background-color: #510081;
 }
 
+
 .botonBanner2 {
     background-color: #510081;
     border: 0.2rem solid #510081;
@@ -871,7 +872,6 @@ hr {
     height: 35px;
     border-radius: 10px;
     border: none;
-
     font-size: 17px;
     font-weight: 300;
     cursor: pointer;
