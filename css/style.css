@@ -765,7 +765,7 @@ hr {
     width: max-content;
 }
 
-.botonCategoria2:hover, .botonCategoria:active {
+.botonCategoria2:hover, .botonCategoria2:active {
     color: white;
     background-color: #510081;
 }
@@ -784,7 +784,7 @@ hr {
     width: max-content;
 }
 
-.botonCategoria2:hover, .botonCategoria:active {
+.botonCategoria3:hover, .botonCategoria3:active {
     color: #510081;
     background-color: white;
 }
@@ -805,7 +805,7 @@ hr {
     width: max-content;
 }
 
-.botonBanner2:hover, .botonCategoria:active {
+.botonBanner2:hover, .botonBanner2:active {
     color: #510081;
     background-color: white;
 }
