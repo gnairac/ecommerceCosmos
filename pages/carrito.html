@@ -10,12 +10,17 @@
     <link rel="stylesheet" href="../css/responsive.css">
     <link rel="stylesheet" href="../css/social-media.css">
     <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/carrito.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--Link Fuente-->
     <script src="https://use.fontawesome.com/502b7294a9.js"></script>     
     <!--Link FavIcon-->
     <link rel="shortcut icon" type="image/jpg" href="https://i.postimg.cc/zGhXjHxn/FavIcon.png" sizes="15px">
     <!--Descripción del sitio para el SEO-->
     <meta name="description" content="¡Haz tu compra ahora y aprovecha nuestras promociones especiales!"/>
+    <!-- <script src="../app.js" async></script> -->
     <title>Cosmos I Carro de compras</title> 
 </head>
 <body>
@@ -24,7 +29,7 @@
             <input type="checkbox" id="check">
             <label for="check"class="checkbtn">
                 <i class="bi bi-truck"></i>
-                <i class="bi bi-cart"></i>
+                <i class="bi bi-cart" id="cart-icon"></i>
                 <i class="bi bi-person"></i>
                 <i class="bi bi-list"></i>
             </label>
@@ -74,83 +79,87 @@
     <div id="correo"><a href="https://outlook.live.com/owa/?authRedirect=true" target="_blank" class="fa fa-envelope-o"></a></div>
     </div>
     
-    <main>     
-        <div class="contenedor" id="contenedor">
-            <div>
-                <img src="images/gaimer.webp" alt="Producto 1">
-                <div class="informacion">
-                    <p>Producto 1</p>
-                    <p class="precio">$100.000</p>
-                    <button>Comprar</button>    
+    <main>
+        <section class="contenedorCarrito">
+            <!-- Contenedor de elementos -->
+            <div class="contenedor-items">
+                <div class="item">
+                    <span class="titulo-item">Box Engasse</span>
+                    <img src="https://imagizer.imageshack.com/img923/3487/owKb0c.jpg" alt="" class="img-item">
+                    <span class="precio-item">$15.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">English Horse</span>
+                    <img src="https://imagizer.imageshack.com/img922/7452/JKBxHt.png" alt="" class="img-item">
+                    <span class="precio-item">$25.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Knock Nap</span>
+                    <img src="https://imagizer.imageshack.com/img924/7990/UOQ2gC.png" alt="" class="img-item">
+                    <span class="precio-item">$35.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">La Night</span>
+                    <img src="https://imagizer.imageshack.com/img924/7673/EG0wU4.png" alt="" class="img-item">
+                    <span class="precio-item">$18.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Silver All</span>
+                    <img src="https://imagizer.imageshack.com/img924/55/4E0vXU.png" alt="" class="img-item">
+                    <span class="precio-item">$32.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Skin Glam</span>
+                    <img src="https://imagizer.imageshack.com/img923/9641/WKWPvg.png" alt="" class="img-item">
+                    <span class="precio-item">$18.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Midimix</span>
+                    <img src="https://imagizer.imageshack.com/img922/3224/17iVKg.png" alt="" class="img-item">
+                    <span class="precio-item">$54.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <!-- <div class="item">
+                    <span class="titulo-item">Sir Blue</span>
+                    <img src="/img/sirblue.png" alt="" class="img-item">
+                    <span class="precio-item">$32.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Middlesteel</span>
+                    <img src="/img/middlesteel.png" alt="" class="img-item">
+                    <span class="precio-item">$42.800</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div> -->
+            </div>
+            <!-- Carrito de Compras -->
+            <div class="carrito" id="carrito">
+                <div class="header-carrito">
+                    <span class="titulo-carrito">Tu Carrito</span>
+                </div>
+
+                <div class="carrito-items">
+                </div>
+                <div class="carrito-total">
+                    <div class="fila">
+                        <strong>Tu Total</strong>
+                        <span class="carrito-precio-total">
+                            $120.000,00
+                        </span>
+                    </div>
+                    <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+                    <i class="bx bx-x" id="close-cart"></i>
                 </div>
             </div>
-            <div>
-                <img src="images/compu.jpg" alt="Producto 2">
-                <div class="informacion">
-                    <p>Producto 2</p>
-                    <p class="precio">$75.000</p>
-                    <button>Comprar</button>    
-                </div>
-            </div>
-            <div>
-                <img src="images/images.jpg" alt="Producto 3">
-                <div class="informacion">
-                    <p>Producto 3</p>
-                    <p class="precio">$80.000</p>
-                    <button>Comprar</button>    
-                </div>
-            </div>
-            <div>
-                <img src="images/gaimer.webp" alt="Producto 4">
-                <div class="informacion">
-                    <p>Producto 4</p>
-                    <p class="precio">$80.000</p>
-                    <button>Comprar</button>    
-                </div>
-            </div>
-            <div>
-                <img src="images/compu.jpg" alt="Producto 5">
-                <div class="informacion">
-                    <p>Producto 5</p>
-                    <p class="precio">$80.000</p>
-                    <button>Comprar</button>    
-                </div>
-            </div>
-            <div>
-                <img src="images/images.jpg" alt="Producto 6">
-                <div class="informacion">
-                    <p>Producto 6</p>
-                    <p class="precio">$80.000</p>
-                    <button>Comprar</button>    
-                </div>
-            </div>
-            <div>
-                <img src="images/gaimer.webp" alt="Producto 6">
-                <div class="informacion">
-                    <p>Producto 7</p>
-                    <p class="precio">$80.000</p>
-                    <button>Comprar</button>    
-                </div>
-            </div>
-            <div>
-                <img src="images/compu.jpg" alt="Producto 6">
-                <div class="informacion">
-                    <p>Producto 8</p>
-                    <p class="precio">$80.000</p>
-                    <button>Comprar</button>    
-                </div>
-            </div>
-            <div>
-                <img src="images/gaimer.webp" alt="Producto 6">
-                <div class="informacion">
-                    <p>Producto 9</p>
-                    <p class="precio">$80.000</p>
-                    <button>Comprar</button>    
-                </div>
-            </div>            
-        </div>            
+        </section>
     </main>
-    
+
     <footer id="pie">
         <div class="contenedorFooter1">
             <div class="footer1">
