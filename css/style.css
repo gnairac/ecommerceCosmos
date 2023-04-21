@@ -623,10 +623,10 @@ hr {
 /*Estilo sección Equipo*/
 .contenedorNosotras{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 40rem;
     padding: 2rem;
-    grid-gap:2rem;
+    grid-gap:9rem;
     margin: 2rem 8rem 6rem 8rem; 
 }
 
@@ -637,7 +637,7 @@ hr {
 }
 
 .avatar {
-    margin: 1.2rem 5rem 0rem 5rem;
+    margin: 1.2rem 5rem 0rem 6rem;
     width: 60%;
 }
 
@@ -649,7 +649,7 @@ hr {
     font-size: 2rem;
     font-weight: bold;
     color: #510081;
-    margin: 0rem 4rem;
+    margin: 0rem 6rem;
     padding: 0rem 1rem;
     width: 20rem;
 }
@@ -660,7 +660,7 @@ hr {
     line-height: 2rem;
     color: white;
     font-weight: 500;
-    margin: 1rem 3rem;
+    margin: 1rem 4rem;
 }
 
 /*Estilos de la galeria de Html Categoría de Productos*/
