@@ -61,12 +61,13 @@
 
 .contenedorCarrito .contenedor-items .item .boton-item{
     display: block;
-    margin: 1.5rem auto;
+    margin: 2rem auto;
+    width: max-content;
     background-color: #fff;
     /* font-size: 1.1rem; */
     color: #510081;
-    padding: 0.5rem 1rem;
-    border-radius: 5rem;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
     border: 0.2rem solid #510081;
     cursor: pointer;
 }
@@ -197,7 +198,7 @@
     color: #fff;
     border-radius: 0.5rem;
     font-size: 1.8rem;
-    padding: 2rem;
+    padding: 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -4,12 +4,13 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    width: 42rem;
+    width: 45rem;
     background-color: #f1e1f7;
     padding: 2.5rem;
     margin: 1rem auto 2.5rem auto;
     border-radius: 1rem;
     box-shadow: 0.7rem 1rem 0.4rem #646363;
+    margin-bottom: 5rem;
 }
 
 .tituloFormulario {
@@ -43,11 +44,12 @@
 }
 
 .botonFormulario {
-    width: 100%;
+    width: 100%;  
     background: linear-gradient(90deg, hsla(297, 64%, 51%, 1) 0%, hsla(248, 57%, 40%, 1) 100%);
     border: none;
-    padding: 1.2rem;
-    font-size: 1.4rem;
+    border-radius: 1.5rem;
+    padding: 1.3rem;
+    font-size: 1.5rem;
     letter-spacing: 0.07rem;
     color: white;
     font-weight: bold;
