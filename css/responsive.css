@@ -432,18 +432,8 @@
         display: none;
     }
 
-    .botonBanner {
-        margin-top: -7rem;
-        margin-left: 9.5rem;
-        position:absolute;
-    }
-
-    .compraAqui {
-        border-radius: 2rem;
-        padding: 0.7rem 2rem;
-        border: 0.1rem solid #510081;
-        font-size: 1.2rem;
-    }
+    .banner{
+        display:none;
 
     .seccionCategorias {
         height: 102rem;
