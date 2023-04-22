@@ -281,7 +281,8 @@
 }
 
 /* Tablet-Ipad*/
-@media (min-width: 360px) and (max-width: 768px) {
+@media (min-width: 360px) and (max-width: 768px) 
+{
     h1 {
         font-size: 4rem;
     }
@@ -392,8 +393,8 @@
     }
 }
  
-
-@media (min-width: 768px) and (max-width: 900px) {
+@media (min-width: 768px) and (max-width: 900px) 
+{
     h1 {
         font-size: 4.5rem;
     }
@@ -434,6 +435,7 @@
 
     .banner{
         display:none;
+    }
 
     .seccionCategorias {
         height: 102rem;
@@ -692,7 +694,7 @@
     .botonBanner {
         margin-top: -8.5rem;
         margin-left: 12,5rem;
-        positio:absolute;
+        position:absolute;
     }
 
     .compraAqui {
