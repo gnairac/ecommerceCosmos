@@ -553,6 +553,7 @@
     .botonBanner {
         margin-top: -8rem;
         margin-left: 10rem;
+        position:absolute;
     }
 
     .compraAqui {
@@ -701,6 +702,7 @@
     .botonBanner {
         margin-top: -10rem;
         margin-left: 12rem;
+        positio:absolute;
     }
 
     .compraAqui {
