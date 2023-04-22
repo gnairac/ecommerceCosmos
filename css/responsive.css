@@ -49,7 +49,7 @@
     .contenedorRegistro p {
         height: 2rem;
         font-size: 1.1rem;
-        line-height: 2rem;
+        line-height: 2rem;        
     }
 
     .botonFormulario {
@@ -61,42 +61,48 @@
     }
 
     .seccionCategorias {
-        height: 88rem;
-        margin-bottom: 2rem;
+        height: 68rem;
     }
 
-    .contenedorCategorias {
+    .seccionCategorias .main-card {
+        height: 50rem;             
+    }
+
+    .main-card .contenedorCategorias {
         width: 100%;
-        height: 55rem;
-        margin: 2rem auto 10rem auto;
+        height: 58rem;
+        margin: 2rem 1rem 0rem auto;
     }
 
-    .categoria {
+    .main-card .contenedorCategorias .categoria {
         display: flex;
         flex-wrap: wrap;
         align-content: center;
-        width: 25rem;
-        height: 20rem;
-        margin-top: 3rem;
+        width: 13rem;
+        height: 16rem;              
         border-radius: 1rem;
         box-shadow: 0.5rem 0.4rem 0.4rem #646363;
         justify-content: center;
     }
 
     .imgCategoria {
-        width: 80%;
-        padding-left: 6rem;
+        width: 82%;
+        padding-left: 3rem;
+    }
+
+    .button {
+        margin: 0rem;
     }
 
     .botonCategoria {
         border: 0.1rem solid white;
-        border-radius: 3rem;
+        border-radius: 2rem;
         height: 3rem;
-        font-size: 1.2rem;
+        font-size: 1rem;
         color: white;
         margin-inline: 4rem;
-        margin-top: 1rem;
-        padding: 0rem 2.5rem;
+        margin-top: 1.5rem;
+        padding: 0rem 2rem;
     }
 
     .botonCategoria:hover,
@@ -231,7 +237,6 @@
     .contenedorFooter2 h5 {
         font-size: 1rem;
         margin: 1rem, 0.5rem;
-
     }
 
     #whatsapp a {
@@ -243,9 +248,39 @@
         padding: 1.5rem;
     }
 
+    .galeria-container{
+        grid-gap: 1rem;
+        margin: 4rem 8rem 0rem 2rem;
+    }
+
+    .titulo-item {
+        font-size: 1.2;
+    }
+
+    .parrafoSomos {
+        font-size: 1.5rem;
+    }
+
+    .contenedorEquipo {
+        height: 43rem ;
+    }
+
+    .parrafoDevs {
+        font-size: 1.2rem;
+    }
+
+    .botonDev{
+        font-size: 1.5rem;
+        width: 18rem;
+    }
+
+    .boton-item {
+        font-size: 1rem;        
+    }
+
 }
 
-/* Tablet-Ipad
+/* Tablet-Ipad*/
 @media (min-width: 360px) and (max-width: 768px) {
     h1 {
         font-size: 4rem;
@@ -287,30 +322,46 @@
         padding: 0.7rem 1rem 0.7rem 0rem;
     }
 
-    .botonBanner {
-        margin-top: -7rem;
-        margin-left: 10rem;
+    .red {
+        display: none;
     }
 
-    .compraAqui {
-        border: 0.1rem solid #510081;
-        padding: 0.5rem 1.5rem;
-        font-size: 1.2rem;
+    form {
+        display: none;
+    }
+     
+    .banner{
+        display: none;
+    }
+   
+    .main-card .contenedorCategorias .categoria {
+        width: 25rem;
+        height: 26rem;
+        margin-bottom: 3rem;
+    }
+
+    .imgCategoria {
+        width: 80%;
+        padding-left: 5rem;
+    }
+
+    .button{
+        margin-top: 0rem;
     }
 
     .seccionCategorias {
-        height: 82rem;
+        height: 86rem;
     }
 
-    .contenedorCategorias {
+    .main-card .contenedorCategorias {
         width: 100%;
-        height: 70rem;
-        margin: 4rem auto 8rem auto;
+        height: 60rem;
+        margin: 4rem 2rem 2rem 1rem;
     }
 
-    .categoria {
-        width: 30rem;
-        height: 30rem;
+    .main-card .contenedorCategorias .categoria {
+        width: 25rem;
+        height: 28rem;
     }
 
     .imgCategoria {
@@ -339,15 +390,8 @@
     .contenedorFooter1 {
         margin-left: 2rem;
     }
-
-    .red {
-        display: none;
-    }
-
-    form {
-        display: none;
-    }
-} */
+}
+ 
 
 @media (min-width: 768px) and (max-width: 900px) {
     h1 {
@@ -401,7 +445,11 @@
     }
 
     .seccionCategorias {
-        height: 85rem;
+        height: 102rem;
+    }
+    
+    .main-card .contenedorCategorias{
+        margin: 1rem 0rem 0rem 2rem;
     }
 
     .contenedorCategorias {
@@ -410,9 +458,10 @@
         margin: 4rem auto 8rem auto;
     }
 
-    .categoria {
+    .main-card .contenedorCategorias .categoria{
         width: 30rem;
-        height: 32rem;
+        height: 35rem;
+        margin-top: 3rem;
     }
 
     .imgCategoria {
@@ -427,7 +476,7 @@
         font-size: 1.5rem;
         color: white;
         margin-inline: 4rem;
-        margin-top: 1rem;
+        margin-top: 3rem;
         padding: 0.5rem 2.5rem;
     }
 
@@ -438,10 +487,27 @@
         border: #510081;
     }
 
+    .button {
+        margin: 10rem;
+    }
+
     .contenedorFooter1 {
         margin-left: 3rem;
         margin-bottom: 0.5rem;
     }
+
+    .contenedorEquipo {
+        height: 46rem;
+    }
+
+    .parrafoDevs {
+        font-size: 1.4rem;
+    }
+
+    .parrafoSomos {
+        font-size: 1.7rem;
+    }
+
 }
 
 @media (min-width: 900px) and (max-width: 1024px) {
@@ -496,19 +562,18 @@
     }
 
     .seccionCategorias {
-        height: 52rem;
+        height: 120rem;
     }
 
-    .contenedorCategorias {
-        width: 100%;
-        height: 70rem;
-        margin: 4rem auto 8rem auto;
+    .main-card .contenedorCategorias {
+        height: 80rem;
     }
 
-    .categoria {
-        width: 30rem;
-        height: 32rem;
+    .main-card .contenedorCategorias .categoria {
+        height: 40rem;
+        margin-bottom: 5rem;
     }
+
 
     .imgCategoria {
         width: 90%;
@@ -522,7 +587,7 @@
         font-size: 1.5rem;
         color: white;
         margin-inline: 4rem;
-        margin-top: 1rem;
+        margin-top: 2rem;
         padding: 0.5rem 2.5rem;
     }
 
@@ -642,17 +707,17 @@
     }
 
     .seccionCategorias {
-        height: 63rem;
+        height: 140rem;
     }
 
-    .contenedorCategorias {
-        height: 75rem;
-        margin: 4rem auto 7rem auto;
+    .main-card .contenedorCategorias {
+        margin: 8rem 2rem 0rem 2rem;   
     }
 
-    .categoria {
-        width: 32rem;
-        height: 42rem;
+    .main-card .contenedorCategorias .categoria {
+        height: 50rem;
+        width: 40rem;
+        margin-bottom: 5rem;
     }
 
     .imgCategoria {
@@ -688,9 +753,14 @@
         width: max-content;
     }
 
+    .button {
+        margin-top:0rem;
+    }
+
     .contenedorFooter1 {
         margin-left: 3rem;
         margin-bottom: 0.7rem;
         font-size: 1.5rem;
     }
+   
 }
