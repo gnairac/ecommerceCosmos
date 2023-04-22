@@ -277,7 +277,6 @@
     .boton-item {
         font-size: 1rem;        
     }
-
 }
 
 /* Tablet-Ipad*/
@@ -500,10 +499,10 @@
     .parrafoSomos {
         font-size: 1.7rem;
     }
-
 }
 
-@media (min-width: 900px) and (max-width: 1024px) {
+@media (min-width: 900px) and (max-width: 1024px) 
+{
     h1 {
         font-size: 5rem;
     }
@@ -542,17 +541,8 @@
         display: none;
     }
 
-    .botonBanner {
-        margin-top: -8rem;
-        margin-left: 11rem;
-        position:absolute;
-    }
-
-    .compraAqui {
-        border-radius: 2rem;
-        padding: 0.7rem 2.5rem;
-        border: 0.2rem solid #510081;
-        font-size: 1.5rem;
+    .banner{
+        display: none;
     }
 
     .seccionCategorias {
@@ -567,7 +557,6 @@
         height: 40rem;
         margin-bottom: 5rem;
     }
-
 
     .imgCategoria {
         width: 90%;
@@ -660,7 +649,8 @@
     }
 }
 
-@media (min-width: 1024px) and (max-width: 1200px) {
+@media (min-width: 1024px) and (max-width: 1200px) 
+{
     h3 {
         font-size: 2.8rem;
     }
@@ -693,7 +683,7 @@
 
     .botonBanner {
         margin-top: -8.5rem;
-        margin-left: 12,5rem;
+        margin-left: 12.5rem;
         position:absolute;
     }
 
@@ -756,6 +746,5 @@
         margin-left: 3rem;
         margin-bottom: 0.7rem;
         font-size: 1.5rem;
-    }
-   
+    }   
 }
