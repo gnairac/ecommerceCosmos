@@ -231,7 +231,6 @@
 
     .contenedorFooter2 {
         height: 5rem;
-
     }
 
     .contenedorFooter2 h5 {
@@ -257,6 +256,10 @@
         font-size: 1.2;
     }
 
+    .contenedorTituloConocenos {
+        display: none;
+    }
+
     .parrafoSomos {
         font-size: 1.5rem;
     }
@@ -276,6 +279,10 @@
 
     .boton-item {
         font-size: 1rem;        
+    }
+
+    .categoriaBanner{
+        display: none;
     }
 }
 
@@ -387,6 +394,14 @@
         border: #510081;
     }
 
+    .contenedorTituloConocenos {
+        display: none;
+    }
+
+    .categoriaBanner{
+        display: none;
+    }
+
     .contenedorFooter1 {
         margin-left: 2rem;
     }
@@ -488,7 +503,15 @@
         margin-bottom: 0.5rem;
     }
 
-    .contenedorEquipo {
+    .categoriaBanner{
+        display: none;
+    }
+    
+    .contenedorTituloConocenos {
+        display: none;
+    }
+
+    /* .contenedorEquipo {
         height: 46rem;
     }
 
@@ -498,7 +521,7 @@
 
     .parrafoSomos {
         font-size: 1.7rem;
-    }
+    } */
 }
 
 @media (min-width: 900px) and (max-width: 1024px) 
