@@ -1,5 +1,5 @@
 # ecommerceCosmos
-Somos un equipo de cuatro mujeres apasionadas por el desarrollo web y la tecnología. Tres de nosotras somos de Colombia y una de Uruguay y trabajamos juntas para llevar a cabo proyectos desafiantes y emocionantes como este.
+Somos un equipo de tres mujeres apasionadas por el desarrollo web y la tecnología. Dos de nosotras somos de Colombia y una de Uruguay y trabajamos juntas para llevar a cabo proyectos desafiantes y emocionantes como este.
 
 Este sitio web es un e-commerce especializado en la venta de productos de electrónica. Nuestro objetivo es brindar una experiencia de compra en línea rápida, fácil y segura para todos nuestros clientes. Desde el primer momento en que nos unimos como equipo, nos comprometimos a crear un sitio web de alta calidad que se destaque por su diseño, su funcionalidad y su facilidad de uso.
 
