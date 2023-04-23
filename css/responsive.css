@@ -16,6 +16,10 @@
         line-height: 1.8rem;
     }
 
+    .enlace {
+        position: absolute;
+    }
+
     .logo {
         height: 6.4rem;
         width: 55%;
@@ -303,6 +307,10 @@
         line-height: 1.8rem;
     }
 
+    .enlace {
+        position: absolute;
+    }
+
     .logo {
         height: 6.8rem;
         width: 80%;
@@ -421,6 +429,10 @@
         font-size: 2rem;
     }
 
+    .enlace {
+        position: absolute;
+    }
+
     .logo {
         width: 90%;
         height: 8rem;
@@ -506,7 +518,7 @@
     .categoriaBanner{
         display: none;
     }
-    
+
     .contenedorTituloConocenos {
         display: none;
     }
@@ -536,6 +548,10 @@
 
     h3 {
         font-size: 2rem;
+    }
+
+    .enlace {
+        position: absolute;
     }
 
     .logo {
