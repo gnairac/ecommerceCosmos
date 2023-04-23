@@ -4,7 +4,6 @@
     margin: 4rem 10rem;
     display: flex;
     justify-content: space-between;
-    /* oculto lo que queda fuera del .contenedor */
     contain: paint;
 }
 
@@ -13,8 +12,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
     grid-gap:4rem;
-    grid-row-gap: 5rem;
-    /* width: 60%; */
+    grid-row-gap: 5rem;   
     width: 100%;
     transition: .3s;
 }
@@ -63,8 +61,7 @@
     display: block;
     margin: 2rem auto;
     width: max-content;
-    background-color: #fff;
-    /* font-size: 1.1rem; */
+    background-color: #fff;   
     color: #510081;
     padding: 1rem 2rem;
     border-radius: 3rem;
@@ -110,8 +107,7 @@
 
 .carrito .carrito-item{
     display: flex;
-    align-items: center;
-    /* justify-content: space-between; */
+    align-items: center;  
     position: relative;
     border-bottom: 0.1rem solid #666;
     padding: 2rem;
