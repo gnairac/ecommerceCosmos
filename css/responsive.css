@@ -373,12 +373,12 @@
     .main-card .contenedorCategorias {
         width: 100%;
         height: 60rem;
-        margin: 4rem 2rem 2rem 1rem;
+        margin: 7rem 2rem 0rem 1rem;
     }
 
     .main-card .contenedorCategorias .categoria {
         width: 25rem;
-        height: 28rem;
+        height: 14rem;
     }
 
     .imgCategoria {
@@ -387,11 +387,11 @@
     }
 
     .botonCategoria {
-        border: 0.1rem solid white;
+        border: 0.1rem solid #510081;
         border-radius: 3rem;
         height: 3rem;
         font-size: 1.2rem;
-        color: white;
+        color: #510081;
         margin-inline: 4rem;
         margin-top: 1rem;
         padding: 0rem 2.5rem;
@@ -402,6 +402,27 @@
         color: white;
         background-color: #510081;
         border: #510081;
+    }
+
+    .galeria-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 50rem;
+        padding: 2rem;
+        grid-gap: 4rem;
+        margin: 4rem 8rem 0rem 4rem;
+    }
+
+    .contenedorNosotras {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 40rem;
+        padding: 2rem;
+        margin: 2rem 8rem 6rem 8rem;
+    }
+
+    .contenedorEquipo .botonDev {
+        margin: 0rem 8rem;
     }
 
     .contenedorTituloConocenos {
