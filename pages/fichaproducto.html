@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!--Link Css-->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <!-- <link rel="stylesheet" href="../css/social-media.css"> -->
+    <!-- <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/carrito.css"> -->
+    <link rel="stylesheet" href="../css/fichaproducto.css">
+    <!--Link Fuente-->
+    <script src="https://use.fontawesome.com/502b7294a9.js"></script>     
+    <!--Link FavIcon-->
+    <link rel="shortcut icon" type="image/jpg" href="https://i.postimg.cc/zGhXjHxn/FavIcon.png" sizes="15px">
+    <!--Descripción del sitio para el SEO-->
+    <meta name="description" content="Explora nuestras categorías de electrónica y tecnología."/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Cosmos I Ficha Producto</title>    
+</head>
+<body>
+  <section>
+    <div class="container flex">
+      <div class="left">
+        <div class="main_image">
+          <img src="https://imageshack.com/i/pnWKWPvgp" class="slide">
+        </div>
+        <div class="option flex">
+          <img src="https://imageshack.com/i/poOBoDe4p" onclick="img('https:/imageshack.com/i/poOBoDe4p')">
+          <img src="https://imageshack.com/i/pm8p38Csp" onclick="img('https:/imageshack.com/i/pm8p38Csp')">
+          <img src="https://imageshack.com/i/poa5eIshp" onclick="img('https:/imageshack.com/i/poa5eIshp')">
+          <img src="https://imageshack.com/i/pnWKWPvgp" onclick="img('https:/imageshack.com/i/pnWKWPvgp')">
+        </div>
+      </div>
+      <div class="right">
+        <h4 class="tituloProducto">Horno microondas LG </h4>
+        <h3 class="precio"> <small></small>$586.000 </h3>
+        <p>Referencia: MS0936GIR</p>
+        <p>Con una potencia de 1150W, posee como accesorio una base de vidrio hexagonal y manual.</p>
+        <h5 class="propiedadesProducto">Colores disponibles:         
+            Full black, blanco y gris </h5>
+        <div class="color flex1">
+          <span></span>
+          <span></span>
+          <span></span>    
+        </div>
+        <h5 class="propiedadesProducto">Number</h5>
+        <div class="add flex1">
+          <span>-</span>
+          <label>1</label>
+          <span>+</span>
+        </div>
+        <a href="../pages/pasarela.html">
+        <button>Comprar ahora</button>
+      </a>
+      </div>
+    </div>
+  </section>
+  <script>
+    function img(anything) {
+      document.querySelector('.slide').src = anything;
+    }
+
+    function change(change) {
+      const line = document.querySelector('.home');
+      line.style.background = change;
+    }
+  </script>
+</body>
+
+</html>
