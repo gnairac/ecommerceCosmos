@@ -815,3 +815,221 @@ hr {
     grid-column-start: span 3;
     margin-bottom: 1rem;
 }
+
+/* estilos ficha de producto */
+.container {
+    max-width: 75%;
+    margin: auto;
+    height: 80vh;
+    margin-top: 5%;
+    background: white;
+    box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+  }
+  
+  img.slide{
+    width: 600px;
+    height: 600px;
+  }
+  
+  .left, .right {
+    width: 50%;
+    padding: 30px;
+  }
+  
+  .flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .flex1 {
+    display: flex;
+  }
+  
+  .main_image {
+    width: auto;
+    height: auto;
+  }
+  
+  .option img {
+    width: 75px;
+    height: 75px;
+    padding: 10px;
+  }
+  
+  .right {
+    padding: 50px 100px 50px 50px;
+  }
+  
+  h3 {
+    color: #510081;
+    margin: 20px 0 20px 0;
+    font-size: 50px;
+  }
+  
+  h5,
+  p,
+  small {
+    color: #837D7C;
+  }
+  
+  h4 {
+    color: rgb(255, 31, 117);
+    font-size: 40px;
+  }
+  
+  
+  
+  p {
+    margin: 50px 25px 50px 0;
+    line-height: 25px;
+    font-size: 20px ;
+  
+  }
+  
+  h5 {
+    font-size: 19px;
+  }
+  
+  .flex1{
+    font-size: 30px;
+  }
+  
+  label,
+  .add span,
+  .color span {
+    width: 30px;
+    height: 30px;
+    background: #000;
+    border-radius: 50%;
+    margin: 20px 10px 20px 0;
+  }
+  
+  .color span:nth-child(2) {
+    background: #eee8e8;
+  }
+  
+  .color span:nth-child(3) {
+    background:rgb(73, 73, 73);
+  }
+  
+  
+  .add label,
+  .add span {
+    background: none;
+    border: 1px solid #570079;
+    color: #570079;
+    text-align: center;
+    line-height: 28px;
+  }
+  
+  .add label {
+    padding: 10px 35px 0 20px;
+    border-radius: 50px;
+    line-height: 0.3;
+    font-size: 22px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    background: #570079;
+    color: white;
+    margin-top: 12%;
+    border-radius: 30px;
+    font-size: 20px;
+
+    }
+
+    /* estilos de pasarela de pago */
+    .containerPasarela{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 25px;
+        min-height: 100vh;
+        background-color: #510081;
+        
+      }
+      
+      .container form{
+        padding: 50px;
+        width: 800px;
+        background: #fff;
+        box-shadow: 0 5px 10px rgba(0,0,0,.1);
+        border-radius: 15px;
+      }
+      
+      .container form .row{
+        display: flex;
+        flex-wrap: wrap;
+        gap:15px;
+        
+      }
+      
+      .container form .row .col{
+        flex:1 1 250px;
+      }
+      
+      .container form .row .col .title{
+        font-size: 30px;
+        color:#510081;
+        padding-bottom: 5px;
+      
+       
+      }
+      
+      .container form .row .col .inputBox{
+        margin:15px 0;
+      }
+      
+      .container form .row .col .inputBox span{
+        margin-bottom: 10px;
+        display: block;
+        
+      }
+      
+      .container form .row .col .inputBox input{
+        width: 100%;
+        border:1px solid #ccc;
+        padding:10px 15px;
+        font-size: 15px;
+        text-transform: none;
+      }
+      
+      .container form .row .col .inputBox input:focus{
+        border:1px solid #000;
+      }
+      
+      .container form .row .col .flex{
+        display: flex;
+        gap:15px;
+      }
+      
+      .container form .row .col .flex .inputBox{
+        margin-top: 5px;
+      }
+      
+      .container form .row .col .inputBox img{
+        height: 34px;
+        margin-top: 5px;
+        filter: drop-shadow(0 0 1px #000);
+      }
+      
+      .container form .submit-btn{
+        width: 100%;
+        padding:12px;
+        font-size: 17px;
+        background: #510081;
+        color:#fff;
+        margin-top: 5px;
+        cursor: pointer;
+        border-radius: 30px;
+      }
+      
+      .container form .submit-btn:hover{
+        background: #ff5ab5;
+      }
+ 
