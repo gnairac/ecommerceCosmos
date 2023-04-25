@@ -6,13 +6,13 @@
     .container {
         max-width: 75%;
         margin: auto;
-        height: 88vh;       
+        /* height: 88vh;*/
         background: white;
         box-shadow: 0.5rem 0.5rem 1rem 0.3rem rgba(0, 0, 0, 0.3);
         border-radius: 2rem;
     }
     
-    img.slide{
+    .slideProducto{
         width: 45rem;
         height: 40rem;
     }
@@ -25,7 +25,7 @@
     .flex {
         display: flex;
         justify-content: space-between;
-        margin-top: 2.5rem;
+        margin-top: 4rem;
     }
     
     .flex1 {

@@ -306,6 +306,37 @@
         padding: 2rem;
         grid-gap: 4rem;
         margin: 4rem 8rem 0rem 4rem;}
+
+        .tituloProducto {
+            color: #510081;
+            font-size: 2.5rem;
+            text-align: left;
+            margin: 1rem 0rem;
+        }
+
+        div.right {
+            padding: 2rem;
+            width: min-content;
+        }     
+       
+        .precio {
+            color: rgb(255, 31, 117);
+            font-size: 3rem;
+            text-align: left;
+            margin: 1rem 0rem;
+        }
+
+    .slideProducto {
+            display: none;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: space-between;
+        margin: 0rem 5rem;
+        flex-wrap: nowrap;
+        flex-direction: column-reverse;
+    }
         
 }
 
@@ -453,6 +484,27 @@
     .contenedorFooter1 {
         margin-left: 2rem;
     }
+
+    
+    div.right {       
+        padding: 2rem;
+        width: 85%;
+    } 
+    
+    div.left{       
+        padding: 2rem;
+        width: 85%;
+    }  
+   
+    .slideProducto {
+            display: none;
+    }
+
+    .flex {
+        align-items: center;
+        flex-direction:column-reverse ;
+    }
+    
 }
  
 @media (min-width: 768px) and (max-width: 900px) 
@@ -475,7 +527,6 @@
 
     .logo {
         width: 90%;
-        /* height: 8rem; */
     }
 
     .checkbtn {
@@ -563,17 +614,12 @@
         display: none;
     }
 
-    /* .contenedorEquipo {
-        height: 46rem;
+    img.slideProducto {
+        display: block;   
+        width: 30rem;    
+        height: 30rem;
     }
-
-    .parrafoDevs {
-        font-size: 1.4rem;
-    }
-
-    .parrafoSomos {
-        font-size: 1.7rem;
-    } */
+    
 }
 
 @media (min-width: 900px) and (max-width: 1024px) 
@@ -725,6 +771,12 @@
         margin-left: 3rem;
         margin-bottom: 0.7rem;
     }
+
+    img.slideProducto {
+        display: block;   
+        width: 30rem;    
+        height: 30rem;
+    }
 }
 
 @media (min-width: 1024px) and (max-width: 1200px) 
@@ -825,4 +877,11 @@
         margin-bottom: 0.7rem;
         font-size: 1.5rem;
     }   
+
+    img.slideProducto {
+        display: block;   
+        width: 40rem;    
+        height: 40rem;
+    }
+
 }
