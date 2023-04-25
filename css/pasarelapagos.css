@@ -7,9 +7,13 @@
   background-color: #510081;   
 }
 
+#pasarela {
+  margin: 3rem auto 2rem auto;
+}
+
 .container form{
-  padding: 2.5rem 3rem;
-  width: 70rem;
+  padding: 2rem 2rem;
+  width: 77rem;  
   background: #fff;
   box-shadow: 0 0.5rem 1rem rgba(0,0,0,.1);
   border-radius: 1.5rem;
@@ -85,4 +89,21 @@
 
 .container form .submit-btn:hover{
   background: #ff5ab5;
+}
+
+.botonCierrePasarela{
+  color: #fff;
+  border: 0.2rem solid #570079;
+  border-radius: 5rem;
+  font-size: 1.5rem;
+  /* margin: 0.8rem 0.8rem 0.8rem 0.8rem; */
+  display: inline-block;
+  background-color:#570079;
+  padding: 0.3rem 0.9rem;
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  margin-top: -1rem;
+  margin-left: -1rem;
+  
 }

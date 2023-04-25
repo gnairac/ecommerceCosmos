@@ -357,7 +357,7 @@ span {
 }
 
 .box:hover .containerP p {
-    transform: translateY(0px);
+    transform: translateY(0rem);
     opacity: 1;
     color: #333;
 }

@@ -129,3 +129,22 @@
          background: #ff5ab5;
         }
     
+
+        .contenedorBotonCierre {
+            position: relative;
+        }
+
+        .botonCierreProducto{
+        color: #fff;
+        border: 0.2rem solid #570079;
+        border-radius: 5rem;
+        font-size: 1.5rem;        
+        display: inline-block;
+        background-color:#570079;
+        padding: 0.3rem 0.9rem;
+        width: 3rem;
+        height: 3rem;
+        position: absolute;
+        margin-top: 2rem;
+        margin-left: 2rem;
+        }

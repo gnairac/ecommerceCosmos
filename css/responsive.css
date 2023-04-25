@@ -347,13 +347,27 @@
 
     #pasarela {
         display: block;
-        margin: auto 1.5rem;
+        margin: 2rem 1.5rem;
     }
 
-    
+    .contenedorBotonCierre{
+        position: relative;
+    }
 
-    
-
+    a.botonCierreProducto {
+        color: #fff;
+        border: 0.2rem solid #570079;
+        border-radius: 5rem;
+        font-size: 1.5rem;
+        display: inline-block;
+        background-color: #570079;
+        padding: 0.3rem 0.9rem;
+        width: 3rem;
+        height: 3rem;
+        position: absolute;
+        margin-top: -112rem;
+        margin-left: 2rem;
+    }
 }
 
 /* Tablet-Ipad*/
@@ -525,9 +539,27 @@
         display: block;
         margin: auto 2rem;
     }
+/* 
+    .contenedorBotonCierre{
+        position: relative;
+    }
 
-   
+    a.botonCierreProducto{          
+            color: #fff;
+            border: 0.2rem solid #570079;
+            border-radius: 5rem;
+            font-size: 1.5rem;
+            display: inline-block;
+            background-color: #570079;
+            padding: 0.3rem 0.9rem;
+            width: 3rem;
+            height: 3rem;          
+            position: absolute;
+            margin-top: 0rem;
+            margin-left: 0rem;
+        } */
 }
+
  
 @media (min-width: 768px) and (max-width: 900px) 
 {
