@@ -3,8 +3,8 @@
   justify-content: center;
   align-items: center;
   /* padding: 2rem; */ 
-  min-height: 100vh;
-  background-color: #510081;  
+  min-height: 100vh; 
+  background-color: #510081;   
 }
 
 .container form{
@@ -55,7 +55,7 @@
   border:1px solid #000;
 }
 
-.container form .row .col .flex{
+.container form .row .col .flex {
   display: flex;
   gap:1.5rem;
 }
