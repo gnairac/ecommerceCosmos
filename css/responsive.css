@@ -358,17 +358,19 @@
         color: #fff;
         border: 0.2rem solid #570079;
         border-radius: 5rem;
-        font-size: 1.2rem;
+        font-size: 1rem;
         display: inline-block;
         background-color: #570079;
-        padding: 0.2rem 0.8rem;
-        width: 2.5rem;
-        height: 2.5rem;
+        padding: 0.1rem 0.6rem;
+        width: 2rem;
+        height: 2rem;
         position: absolute;
         margin-top: -112rem;
         margin-left: 2rem;
     }
+    
 }
+
 
 /* Tablet-Ipad*/
 @media (min-width: 360px) and (max-width: 768px) 
