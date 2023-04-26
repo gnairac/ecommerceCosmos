@@ -162,6 +162,7 @@ nav ul li:hover>ul {
     display: block;
 }
 
+
 ul.subMenu li:hover {
     color: #e298c4;
 }
@@ -213,6 +214,12 @@ form input {
 #check {
     display: none;
 }
+
+
+.nav-menu{
+    display: none;
+}
+
 
 form {
     float: right;
@@ -411,7 +418,6 @@ span {
     margin-top: 0rem;
     background: linear-gradient(90deg, hsla(248, 57%, 40%, 1) 0%, hsla(297, 64%, 51%, 1) 100%);
     border-radius: 2rem;
-    position: relative;
     cursor: pointer;
     box-shadow: 0.5rem 0.4rem 0.4rem #646363;
     justify-content: center;
@@ -674,7 +680,6 @@ hr {
 }
 
 .categoria1{
-    position: relative;
     background-image: url(https://i.postimg.cc/MGLfz0Qf/electrodomesticos.webp);
     background-position-y: 0.5rem;
     background-size: contain;

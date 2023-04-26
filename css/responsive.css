@@ -40,6 +40,46 @@
         display: none;
     }
 
+     #check:checked ~ .nav-menu{
+        height: 35vh;
+        width: 50%;
+        right:0;
+    }
+    
+    #check:checked ~ .nav-menu li{
+        display: block;
+    }
+    
+    .nav-menu{
+        display:block;
+        position:absolute;
+        top: 8rem;
+        height: 0;
+        background: rgba(94, 3, 143, 0.9);;
+        text-align: center;
+        transition: all .10s;
+        padding-top: 0;
+    }
+    
+    .nav-menu li{
+        display: none;
+        line-height: 1rem;
+        margin: 2rem 0;
+        transition: all .10s;
+    }
+    
+    .nav-menu li a{
+        color: #fff;
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    
+    .nav-menu li a.active, .nav-menu li a:hover{
+        color:#e298c4;
+        transition: .3s;
+    }
+
     form {
         display: none;
     }
@@ -416,13 +456,8 @@
         /* width: 80%; */
     }
 
-    .checkbtn {
-        display: none;
-    }
-
     .menu {
-        display: block;
-        width: max-content;
+        display: none;
     }
 
     nav ul {
@@ -441,8 +476,56 @@
         display: none;
     }
 
+    #check:checked ~ .nav-menu{
+        height: 26vh;
+        width: 50%;
+        right:0;
+        padding-top: 0;
+    }
+    
+    #check:checked ~ .nav-menu li{
+        display: block;
+    }
+    
+    .nav-menu{
+        display:block;
+        position:absolute;
+        top: 8rem;
+        height: 0;
+        background: rgba(94, 3, 143, 0.9);
+        text-align: center;
+        transition: all .10s;
+    }
+    
+    .nav-menu li{
+        display: none;
+        line-height: 2rem;
+        margin: 2rem 0;
+        transition: all .10s;
+    }
+    
+    .nav-menu li a{
+        color: #fff;
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    
+    .nav-menu li a.active, .nav-menu li a:hover{
+        color:#e298c4;
+        transition: .3s;
+    }
+
     form {
         display: none;
+    }
+
+    .input {
+        padding: 0.6rem;
+        border-radius: 0.4rem;
+        margin-bottom: 1rem;
+        border: 0.3rem solid #f7f2f2;
+        font-size: 1.2rem;
     }
      
     .banner{
@@ -511,6 +594,7 @@
         margin: 4rem 8rem 0rem 4rem;
     }
 
+    
     .contenedorNosotras {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
