@@ -531,12 +531,6 @@
         display: none;
     }
    
-    .main-card .contenedorCategorias .categoria {
-        width: 25rem;
-        height: 26rem;
-        margin-bottom: 3rem;
-    }
-
     .imgCategoria {
         width: 80%;
         padding-left: 5rem;
@@ -558,7 +552,7 @@
 
     .main-card .contenedorCategorias .categoria {
         width: 25rem;
-        height: 14rem;
+        height: 25rem;
     }
 
     .categoria1 {
@@ -635,19 +629,17 @@
         width: max-content;
     }
 
-    
-
     .imgCategoria {
         width: 90%;
         padding-left: 4rem;
     }
 
     .botonCategoria {
-        border: 0.1rem solid #510081;
+        border: 0.1rem solid white;
         border-radius: 3rem;
         height: 3rem;
         font-size: 1.2rem;
-        color: #510081;
+        color: white;
         margin-inline: 4rem;
         margin-top: 1rem;
         padding: 0rem 2.5rem;
