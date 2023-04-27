@@ -593,6 +593,16 @@
         margin: 4rem 8rem 0rem 4rem;
     }
 
+    .contenedorEquipo {
+        height: 46rem ;
+        width: min-content;
+        margin: 1rem auto;
+    }
+
+    .avatar {
+        margin: 1.2rem 5rem 0rem 7rem;
+        width: 60%;
+    }
     
     .contenedorNosotras {
         display: grid;
