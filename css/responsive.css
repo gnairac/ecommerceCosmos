@@ -23,8 +23,7 @@
 
     .logo {
         height: 6.4rem;
-        width: 13rem;
-        /* width: 55%; */
+        width: 13rem;        
     }
 
     .menu {
@@ -40,10 +39,11 @@
         display: none;
     }
 
-     #check:checked ~ .nav-menu{
+    #check:checked ~ .nav-menu{
         height: 35vh;
         width: 50%;
         right:0;
+        z-index: 1;
     }
     
     #check:checked ~ .nav-menu li{
@@ -425,8 +425,7 @@
         position: absolute;
         margin-top: -112rem;
         margin-left: 2rem;
-    }
-    
+    }    
 }
 
 
@@ -452,8 +451,7 @@
     }
 
     .logo {
-        height: 6.8rem;
-        /* width: 80%; */
+        height: 6.8rem;        
     }
 
     .menu {
@@ -481,6 +479,7 @@
         width: 50%;
         right:0;
         padding-top: 0;
+        z-index: 1;
     }
     
     #check:checked ~ .nav-menu li{
@@ -645,25 +644,6 @@
         display: block;
         margin: 1rem 2rem 1rem 2rem;
     }
-/* 
-    .contenedorBotonCierre{
-        position: relative;
-    }
-
-    a.botonCierreProducto{          
-            color: #fff;
-            border: 0.2rem solid #570079;
-            border-radius: 5rem;
-            font-size: 1.5rem;
-            display: inline-block;
-            background-color: #570079;
-            padding: 0.3rem 0.9rem;
-            width: 3rem;
-            height: 3rem;          
-            position: absolute;
-            margin-top: 0rem;
-            margin-left: 0rem;
-        } */
 }
 
  
@@ -780,7 +760,7 @@
         height: 30rem;
     }
     
-       .flex {
+    .flex {
         display: flex;
         justify-content: space-between;
         margin: 0rem 0rem;
@@ -1058,5 +1038,4 @@
         width: 40rem;    
         height: 40rem;
     }
-
 }
