@@ -402,7 +402,7 @@
 
     #pasarela {
         display: block;
-        margin: 1rem 2rem 1rem 2rem;
+        margin: 3rem 2rem 2rem 2rem;
         border: solid #bfb9b9 0.2rem;
     }
 
@@ -736,7 +736,7 @@
 
     #pasarela {
         display: block;
-        margin: 1rem 2rem 1rem 2rem;
+        margin: 3rem 2rem 2rem 2rem;
         border: solid #bfb9b9 0.2rem;
     }
 }
@@ -862,9 +862,18 @@
         flex-wrap: wrap;       
     }
 
+    div.container {
+        display: flex;
+        justify-content: center;
+        align-items: center;      
+        min-height: 100vh;
+        background-color: transparent;
+    }
+
     #pasarela {
         display: block;
-        margin: 3rem 5rem 2rem 5rem;
+        margin: 3rem 5rem 2rem 5rem;        
+        border: solid #bfb9b9 0.2rem;
     }
 }
 
