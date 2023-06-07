@@ -220,15 +220,28 @@ document.getElementById('formularioRegistro').addEventListener('submit',function
 
     event.preventDefault();
 
-    var registro = {
-        nombre: document.getElementById("nombre").value,
-        apellido: document.getElementById("apellido").value,
-        correo: document.getElementById("correo").value,
-        contraseña: document.getElementById("contraseña").value,
-        confirmarContraseña: document.getElementById("confirmarContraseña").value,
-    };
+    document.addEventListener('DOMContentLoaded', function() {
+        var registro = {
+            nombre: document.getElementById("nombre").value,
+            apellido: document.getElementById("apellido").value,
+            correo: document.getElementById("correo").value,
+            contraseña: document.getElementById("contraseña").value,
+            confirmarContraseña: document.getElementById("confirmarContraseña").value,
+        };
+    
+        var datosExistentes = localStorage.getItem('registro');
+    });
+    
 
-    var datosExistentes = localStorage.getItem('registro');
+    // var registro = {
+    //     nombre: document.getElementById("nombre").value,
+    //     apellido: document.getElementById("apellido").value,
+    //     correo: document.getElementById("correo").value,
+    //     contraseña: document.getElementById("contraseña").value,
+    //     confirmarContraseña: document.getElementById("confirmarContraseña").value,
+    // };
+
+    // var datosExistentes = localStorage.getItem('registro');
 
 
 //Procedimiento con un condicional que verifica si se agregó un nuevo registro y si lo encuentra que haga un push 
