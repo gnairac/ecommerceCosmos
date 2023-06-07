@@ -219,8 +219,9 @@ async function obtenerDB() {
 document.getElementById('formularioRegistro').addEventListener('submit',function(event){
 
     event.preventDefault();
+    console.log("Formulario enviado");
 
-    var registro = {
+    const registro = {
         nombre: document.getElementById("nombre").value,
         apellido: document.getElementById("apellido").value,
         correo: document.getElementById("correo").value,
