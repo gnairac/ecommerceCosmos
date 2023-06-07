@@ -1,0 +1,24 @@
+{"clave":[
+    {
+        "nombre": "Juan",
+        "apellido": "Perez",
+        "correo": "juanperez@gmail.com",
+        "contraseña": 14210000,
+        "confirmarContraseña":14210000
+    },
+    {
+        "nombre": "Sofia",
+        "apellido": "Pintos",
+        "correo": "sofiapintos@gmail.com",
+        "contraseña": 54321000,
+        "confirmarContraseña":54321000
+    },
+    {
+        "nombre": "Juana",
+        "apellido": "Sanchez",
+        "correo": "juanairaola@gmail.com",
+        "contraseña": 25117000,
+        "confirmarContraseña":25117000
+    }
+    
+    ]}

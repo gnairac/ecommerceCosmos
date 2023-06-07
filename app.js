@@ -1,3 +1,4 @@
+//CARRITO
 //Variable que mantiene el estado visible del carrito
 var carritoVisible = false;
 
@@ -39,7 +40,7 @@ function ready(){
     }
 
     //Agregamos funcionalidad al botón comprar
-    document.getElementsByClassName('btn-pagar')[0].addEventListener('click',pagarClicked)
+    //document.getElementsByClassName('btn-pagar')[0].addEventListener('click',pagarClicked)
 }
 //Eliminamos todos los elementos del carrito y lo ocultamos
 function pagarClicked(){
@@ -68,9 +69,9 @@ function agregarAlCarritoClicked(event){
 
 let cartIcon = document.querySelector("#cart-icon");
 
-cartIcon.onclick = () => {
-    hacerVisibleCarrito();
-};
+//cartIcon.onclick = () => {
+//    hacerVisibleCarrito();
+//};
 
 
 //Funcion que hace visible el carrito
@@ -202,6 +203,50 @@ function actualizarTotalCarrito(){
     document.getElementsByClassName('carrito-precio-total')[0].innerText = '$'+total.toLocaleString("es") + ",00";
 
 }
+
+//FORMULARIO 
+// Obtener Base de datos de JSON
+async function obtenerDB() {
+    const response = await fetch("http://127.0.0.1:5500/base.json");
+    const json = await response.json();
+    console.log(json);
+    return json;
+  }
+
+//Función para agregar un nuevo registro que toma los datos ingresados del formulario
+document.getElementById('formularioRegistro').addEventListener('submit',function(event){
+
+    event.preventDefault();
+
+    var registro = {
+        nombre: document.getElementById("nombre").value,
+        apellido: document.getElementById("apellido").value,
+        correo: document.getElementById("correo").value,
+        contraseña: document.getElementById("contraseña").value,
+        confirmarContraseña: document.getElementById("confirmarContraseña").value,
+    };
+
+    var datosExistentes = localStorage.getItem('registro');
+
+
+//Procedimiento con un condicional que verifica si se agregó un nuevo registro y si lo encuentra que haga un push 
+//que agregué el nuevo array 
+    if(datosExistentes){
+        var datos = JSON.parse(datosExistentes);
+        datos.usuarios.push(registro);
+    }else{
+        var datos = {
+            usuarios: [registro]
+        }
+    }
+
+    //Pasa el nuevo registro de JSON a string para que se visualize    
+    localStorage.setItem('registro',JSON.stringify(datos));
+
+    //Mensaje de comprobación 
+    console.log("El registro ha sido guardado exitosamente");
+    console.log(datos);
+});
 
 
 

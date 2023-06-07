@@ -18,112 +18,106 @@
         <!--Descripción del sitio para el SEO-->
     <meta name="description" content="Regístrate ahora y comienza a disfrutar de todos los beneficios que nuestra tienda online tiene para ofrecer."/>
         <title>Cosmos I Mi cuenta</title>        
-<body>
-    <header>
-        <nav>
-            <input type="checkbox" id="check">
-            <label for="check"class="checkbtn">
-                <i class="bi bi-truck"></i>
-                <a href="fichaproducto.html">
-                <i class="bi bi-cart"></i>
-            </a>
-            <a href="micuenta.html">
-                <i class="bi bi-person"></i>
-            </a>
-                <i class="bi bi-list"></i>
-            </label>
-            <ul class="nav-menu">
-                <li><a href="../index.html" class="active">Home</a></li>
-                <li><a href="pdd.html" >Productos</a></li>
-                <li><a href="carrito.html">Ofertas</a></li>
-                <li><a href="micuenta.html">Mi cuenta</a></li>
-                <li><a href="somos.html">Conocenos</a></li>
-            </ul>
-            <form autocomplete="off">
-                <div>
-                    <input type="text" name="q" placeholder="Buscar">
-                    <a><img src='https://i.postimg.cc/FFB2yhY4/LUPA.png' alt='LUPA'class="lupa" loading="lazy"/></a>
+        <body>
+            <header>
+                <nav>
+                    <input type="checkbox" id="check">
+                    <label for="check"class="checkbtn">
+                        <i class="bi bi-truck"></i>
+                        <a href="fichaproducto.html">
+                        <i class="bi bi-cart"></i>
+                    </a>
+                    <a href="micuenta.html">
+                        <i class="bi bi-person"></i>
+                    </a>
+                        <i class="bi bi-list"></i>
+                    </label>
+                    <form autocomplete="off">
+                        <div>
+                            <input type="text" name="q" placeholder="Buscar">
+                            <a><img src='https://i.postimg.cc/FFB2yhY4/LUPA.png' alt='LUPA'class="lupa" loading="lazy"/></a>
+                        </div>
+                    </form>
+                    <a href="../index.html" class="enlace">           
+                        <figure>
+                            <img src="../img/logo cosmos - copia.png" alt="Logo" class="logo" width="14rem" height="6rem">
+                        </figure>             
+                    </a>
+                    <ul class="menu">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="pdd.html">Productos</a>
+                            <ul class="subMenu">
+                                <li>Electrodomésticos</li>
+                                <li>Computadoras</li>
+                                <li>Audio y sonido</li>
+                                <li>Televisores</li>
+                                <li>Relojes</li>
+                                <li>Fotografía</li>
+                            </ul>      
+                        </li>                     
+                        <li><a href="carrito.html">Ofertas</a></li>    
+                        <li><a href="micuenta.html">Mi cuenta</a></li>                    
+                        <li><a href="somos.html">Conocenos</a></li>  
+                    </ul> 
+                        <!--Contenedor de Redes Sociales-->
+                    <div class="red">
+                    <!--el target _blanck hace que al hacer clic abra el link en otra pestaña sin salir del sitio-->
+                    <div id="facebook"><a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a></div>                
+                    <div id="instagram"><a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a></div>
+                    <div id="correo"><a href="https://outlook.live.com/owa/?authRedirect=true" target="_blank" class="fa fa-envelope-o"></a></div>
+                    </div>                 
+                </nav>
+            </header>  
+        <main>       
+            <h1>Mis datos</h1>
+            <h2>Accede a tu cuenta</h2>
+            <section class="contenedorRegistro">
+                <h3>Formulario de Registro</h3>
+                <form id= "formularioRegistro" action="micuenta.html" method="POST" class="formulario">
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" required class="input">
+                <input type="text" name="apellido" id="apellido" placeholder="Apellido" required class="input">
+                <input type="email" name="correo" id="correo" placeholder="Correo Electrónico" required class="input">
+                <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña" required class="input">
+                <input type="password" name="contraseña" id="confirmarContraseña" placeholder="Confirma tu contraseña" required class="input">
+                <p>Estoy de acuerdo con los <a href="#">Términos y Condiciones</a></p>
+                <input type="submit" value="Registrarme" class="botonFormulario">
+                </form>
+                <p> <a href="#">Ya tengo cuenta</a></p>
+            </section>        
+            </div>  
+        </main>
+        <footer id="pie">
+            <div class="contenedorFooter1">
+                <div class="footer1">
+                    <h4>SOBRE NOSOTROS</h4>
+                    <p>Sitio especialista en tecnología.</p>
+                    <p>Aseguramos una compra precisa y acertada.</p>
                 </div>
-            </form>
-            <a href="../index.html" class="enlace">           
-                <figure>
-                    <img src="../img/logo cosmos - copia.png" alt="Logo" class="logo" width="14rem" height="6rem">
-                </figure>             
-            </a>
-            <ul class="menu">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="pdd.html">Productos</a>
-                    <ul class="subMenu">
-                        <li>Electrodomésticos</li>
-                        <li>Computadoras</li>
-                        <li>Audio y sonido</li>
-                        <li>Televisores</li>
-                        <li>Relojes</li>
-                        <li>Fotografía</li>
-                    </ul>      
-                </li>                     
-                <li><a href="carrito.html">Ofertas</a></li>    
-                <li><a href="micuenta.html">Mi cuenta</a></li>                    
-                <li><a href="somos.html">Conocenos</a></li>  
-            </ul> 
-                <!--Contenedor de Redes Sociales-->
-            <div class="red">
-            <!--el target _blanck hace que al hacer clic abra el link en otra pestaña sin salir del sitio-->
-            <div id="facebook"><a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a></div>                
-            <div id="instagram"><a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a></div>
-            <div id="correo"><a href="https://outlook.live.com/owa/?authRedirect=true" target="_blank" class="fa fa-envelope-o"></a></div>
-            </div>                 
-        </nav>
-    </header>  
-<main>       
-    <h1>Mis datos</h1>
-    <h2>Accede a tu cuenta</h2>
-    <section class="contenedorRegistro">
-        <h3>Formulario de Registro</h3>
-        <input type="text" name="nombre" id="nombre" placeholder="Nombre" required class="input">
-        <input type="text" name="apellido" id="apellido" placeholder="Apellido" required class="input">
-        <input type="email" name="correo" id="correo" placeholder="Correo Electrónico" required class="input">
-        <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña" required class="input">
-        <input type="password" name="contraseña" id="contraseña" placeholder="Confirma tu contraseña" required class="input">
-        <p>Estoy de acuerdo con los <a href="#">Términos y Condiciones</a></p>
-        <input type="submit" value="Registrarme" class="botonFormulario">
-        <p> <a href="#">Ya tengo cuenta</a></p>
-    </section>        
-    </div>  
-</main>
-<footer id="pie">
-    <div class="contenedorFooter1">
-        <div class="footer1">
-            <h4>SOBRE NOSOTROS</h4>
-            <p>Sitio especialista en tecnología.</p>
-            <p>Aseguramos una compra precisa y acertada.</p>
-        </div>
-        <div class="footer1">
-            <ul class="footerLinks">
-                <li> <a href="#">Preguntas Frecuentes</a>         
-                </li>
-                <li> <a href="#">Financiación</a> 
-                </li>
-                <li> <a href="#">Envío</a>   
-                </li>
-            </li>
-            <li> <a href="#">Cambios y devoluciones</a>   
-            </li>                                      
-            </ul>
-        </div>
-        <div class="footer1">
-            <h4>FORMAS DE PAGO</h4>
-            <figure>
-                <a><img src='https://i.postimg.cc/15FR11yS/Medios-de-pago.png' alt='Medios-de-pago'class="financiacion" loading="lazy"/></a>
-            </figure>
-        </div>
-    </div>  
-    <div class="contenedorFooter2">
-        <h5> Copyright 2023© I Diseñada por Grupo 3Esquinas</h5>            
-    </div>
-    <div id="whatsapp"><a href="https://web.whatsapp.com/" target="_blank" class="fa fa-whatsapp"></a>     
-</footer>
-<body>    
-</body>
-</html>
-        
+                <div class="footer1">
+                    <ul class="footerLinks">
+                        <li> <a href="#">Preguntas Frecuentes</a>         
+                        </li>
+                        <li> <a href="#">Financiación</a> 
+                        </li>
+                        <li> <a href="#">Envío</a>   
+                        </li>
+                    </li>
+                    <li> <a href="#">Cambios y devoluciones</a>   
+                    </li>                                      
+                    </ul>
+                </div>
+                <div class="footer1">
+                    <h4>FORMAS DE PAGO</h4>
+                    <figure>
+                        <a><img src='https://i.postimg.cc/15FR11yS/Medios-de-pago.png' alt='Medios-de-pago'class="financiacion" loading="lazy"/></a>
+                    </figure>
+                </div>
+            </div>  
+            <div class="contenedorFooter2">
+                <h5> Copyright 2023© I Diseñada por Grupo 4Esquinas</h5>            
+            </div>
+            <div id="whatsapp"><a href="https://web.whatsapp.com/" target="_blank" class="fa fa-whatsapp"></a>     
+        </footer>  
+        <script src="../app.js"></script>" 
+        </body>
+        </html>
