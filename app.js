@@ -220,7 +220,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var formulario = document.getElementById("formularioRegistro");
 
     formulario.addEventListener('submit', function(event) {
-        event.preventDefault();
+        event.preventDefault(); /
 
         var registro = {
             nombre: document.getElementById("nombre").value,
@@ -229,9 +229,9 @@ document.addEventListener('DOMContentLoaded', function() {
             contraseña: document.getElementById("contraseña").value,
             confirmarContraseña: document.getElementById("confirmarContraseña").value,
         };
+        var datosExistentes = localStorage.getItem('registro');               
     });
-
-    var datosExistentes = localStorage.getItem('registro');
+});
     
 //Procedimiento con un condicional que verifica si se agregó un nuevo registro y si lo encuentra que haga un push 
 //que agregué el nuevo array 
