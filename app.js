@@ -213,7 +213,7 @@ async function obtenerDB() {
     return json;
   }
 
-  obtenerDB();
+  //obtenerDB();//En caso de querer visualizar la base de datos en consola
 
 //Función para agregar un nuevo registro que toma los datos ingresados del formulario
 document.getElementById('formularioRegistro').addEventListener('submit',function(event){
