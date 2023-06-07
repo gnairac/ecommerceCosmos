@@ -216,37 +216,20 @@ async function obtenerDB() {
   //obtenerDB();//En caso de querer visualizar la base de datos en consola
 
 //Función para agregar un nuevo registro que toma los datos ingresados del formulario
+document.getElementById('formularioRegistro').addEventListener('submit',function(event){
 
-document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('formularioRegistro').addEventListener('submit', function(event) {
-      event.preventDefault();
-      console.log("Formulario enviado");
-  
-      const registro = {
+    event.preventDefault();
+    console.log("Formulario enviado");
+
+    const registro = {
         nombre: document.getElementById("nombre").value,
         apellido: document.getElementById("apellido").value,
         correo: document.getElementById("correo").value,
         contraseña: document.getElementById("contraseña").value,
         confirmarContraseña: document.getElementById("confirmarContraseña").value,
-      };
-  
-    });
-  });
-  
-  var datosExistentes = localStorage.getItem('registro');
+    };
 
-// document.getElementById('formularioRegistro').addEventListener('submit',function(event){
-
-//     event.preventDefault();
-//     console.log("Formulario enviado");
-
-//     const registro = {
-//         nombre: document.getElementById("nombre").value,
-//         apellido: document.getElementById("apellido").value,
-//         correo: document.getElementById("correo").value,
-//         contraseña: document.getElementById("contraseña").value,
-//         confirmarContraseña: document.getElementById("confirmarContraseña").value,
-//     };
+var datosExistentes = localStorage.getItem('registro');
 
   
     
