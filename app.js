@@ -216,22 +216,19 @@ async function obtenerDB() {
   //obtenerDB();//En caso de querer visualizar la base de datos en consola
 
 //Función para agregar un nuevo registro que toma los datos ingresados del formulario
-document.addEventListener('DOMContentLoaded', function() {
-    var formulario = document.getElementById("formularioRegistro");
+document.getElementById('formularioRegistro').addEventListener('submit',function(event){
 
-    formulario.addEventListener('submit', function(event) {
-        event.preventDefault(); /
+    event.preventDefault();
 
-        var registro = {
-            nombre: document.getElementById("nombre").value,
-            apellido: document.getElementById("apellido").value,
-            correo: document.getElementById("correo").value,
-            contraseña: document.getElementById("contraseña").value,
-            confirmarContraseña: document.getElementById("confirmarContraseña").value,
-        };
-        var datosExistentes = localStorage.getItem('registro');               
-    });
-});
+    var registro = {
+        nombre: document.getElementById("nombre").value,
+        apellido: document.getElementById("apellido").value,
+        correo: document.getElementById("correo").value,
+        contraseña: document.getElementById("contraseña").value,
+        confirmarContraseña: document.getElementById("confirmarContraseña").value,
+    };
+
+    var datosExistentes = localStorage.getItem('registro');
     
 //Procedimiento con un condicional que verifica si se agregó un nuevo registro y si lo encuentra que haga un push 
 //que agregué el nuevo array 
