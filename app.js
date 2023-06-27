@@ -205,6 +205,15 @@ function actualizarTotalCarrito(){
 }
 
 //FORMULARIO 
+ // Evento focus en el primer campo del formulario en el campo nombre 
+
+const campoNombre = document.getElementById("nombre");
+
+window.onload = function ()
+{
+    campoNombre.focus ();
+};
+
 // Obtener Base de datos de JSON
 async function obtenerDB() {
     const response = await fetch("http://127.0.0.1:5500/base.json");
@@ -220,6 +229,7 @@ document.getElementById('formularioRegistro').addEventListener('submit',function
 
     event.preventDefault();
     console.log("Formulario enviado");
+   
 
     const registro = {
         nombre: document.getElementById("nombre").value,
@@ -230,7 +240,6 @@ document.getElementById('formularioRegistro').addEventListener('submit',function
     };
 
 var datosExistentes = localStorage.getItem('registro');
-
   
     
 //Procedimiento con un condicional que verifica si se agregó un nuevo registro y si lo encuentra que haga un push 
@@ -250,7 +259,11 @@ var datosExistentes = localStorage.getItem('registro');
     //Mensaje de comprobación 
     console.log("El registro ha sido guardado exitosamente");
     console.log(datos);
+    document.getElementById(`formularioRegistro`).reset(); //Reseteo del formulario
 });
+
+
+
 
 
 
