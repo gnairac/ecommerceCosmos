@@ -1,5 +1,6 @@
 //CARRITO
 //Variable que mantiene el estado visible del carrito
+
 var carritoVisible = false;
 
 //Espermos que todos los elementos de la pàgina cargen para ejecutar el script
@@ -40,7 +41,7 @@ function ready(){
     }
 
     //Agregamos funcionalidad al botón comprar
-    //document.getElementsByClassName('btn-pagar')[0].addEventListener('click',pagarClicked)
+    document.getElementsByClassName('btn-pagar')[0].addEventListener('click',pagarClicked)
 }
 //Eliminamos todos los elementos del carrito y lo ocultamos
 function pagarClicked(){
@@ -69,9 +70,9 @@ function agregarAlCarritoClicked(event){
 
 let cartIcon = document.querySelector("#cart-icon");
 
-//cartIcon.onclick = () => {
-//    hacerVisibleCarrito();
-//};
+cartIcon.onclick = () => {
+hacerVisibleCarrito();
+};
 
 
 //Funcion que hace visible el carrito
@@ -205,8 +206,8 @@ function actualizarTotalCarrito(){
 }
 
 //FORMULARIO 
- // Evento focus en el primer campo del formulario en el campo nombre cuando se carga el HTML
 
+// Evento focus en el primer campo del formulario en el campo nombre cuando se carga el HTML
 const campoNombre = document.getElementById("nombre");
 
 window.onload = function ()
@@ -221,24 +222,39 @@ async function obtenerDB() {
     console.log(json);
     return json;
   }
-
-  //obtenerDB();//En caso de querer visualizar la base de datos en consola
+//obtenerDB();//En caso de querer visualizar la base de datos en consola
 
 //Función para agregar un nuevo registro que toma los datos ingresados del formulario
-document.getElementById('formularioRegistro').addEventListener('submit',function(event){
+document.getElementById('formularioRegistro').addEventListener('submit',async function(event){
 
     event.preventDefault();
     console.log("Formulario enviado");
 
-//Verficar que el correo contenga @
-    const correo = document.getElementById("correo").value;
+    //API para validar el email
+    const url = 'https://email-validator8.p.rapidapi.com/api/v2.0/email';
+    const options = {
+        method: 'POST',
+        headers: {
+            'content-type': 'application/x-www-form-urlencoded',
+            'X-RapidAPI-Key': '52bdfcdae1msh76201ef319ea9dfp1784e8jsn97085d9a66f5',
+            'X-RapidAPI-Host': 'email-validator8.p.rapidapi.com'
+        },
+        body: new URLSearchParams({
+            email: document.getElementById("email").value
+        })
+    };
     
-    if (correo.indexOf('@') === -1) {
-        alert("Ingresa un correo electrónico válido");
-        return;
+    try {
+        const response = await fetch(url, options);
+        const result = await response.text();
+        console.log(result);
+    } catch (error) {
+        console.error(error);
     }
-
-//Verificar que la contraseña tenga un mínimo de 8 caracteres
+    if (result === "true") {
+        alert("El email es válido");
+    }
+    //Verificar que la contraseña tenga un mínimo de 8 caracteres
     const contraseña = document.getElementById("contraseña").value;
 
     if (contraseña.length < 8) {
@@ -246,7 +262,7 @@ document.getElementById('formularioRegistro').addEventListener('submit',function
         return;
     }
 
-//Verficar que el campo confirmarContraseña sea igual a contraseña
+    //Verficar que el campo confirmarContraseña sea igual a contraseña
     const confirmarContraseña = document.getElementById("confirmarContraseña").value;
 
     if (confirmarContraseña !== contraseña) {
@@ -285,24 +301,6 @@ var datosExistentes = localStorage.getItem('registro');
     console.log(datos);
     document.getElementById(`formularioRegistro`).reset(); //Reseteo del formulario
 });
-
-//Instalación de una API de verficación de email
-const apiDireccion = 'https://open.kickbox.com/v1/disposable/';
-
-fetch(apiDireccion)
-  .then(response => {
-    if (!response.ok) {
-      throw new Error('No se cargó la API');
-    }
-    return response.json();
-  })
-  .then(data => {
-        console.log(data);
-  })
-  .catch(error => {
-      console.error(error);
-  });
-
 
 
 
