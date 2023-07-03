@@ -205,7 +205,7 @@ function actualizarTotalCarrito(){
 }
 
 //FORMULARIO 
- // Evento focus en el primer campo del formulario en el campo nombre 
+ // Evento focus en el primer campo del formulario en el campo nombre cuando se carga el HTML
 
 const campoNombre = document.getElementById("nombre");
 
@@ -229,9 +229,33 @@ document.getElementById('formularioRegistro').addEventListener('submit',function
 
     event.preventDefault();
     console.log("Formulario enviado");
-   
 
-    const registro = {
+//Verficar que el correo contenga @
+    const correo = document.getElementById("correo").value;
+    
+    if (correo.indexOf('@') === -1) {
+        alert("Ingresa un correo electrónico válido");
+        return;
+    }
+
+//Verificar que la contraseña tenga un mínimo de 8 caracteres
+    const contraseña = document.getElementById("contraseña").value;
+
+    if (contraseña.length < 8) {
+        alert("La contraseña debe tener al menos 8 caracteres");
+        return;
+    }
+
+//Verficar que el campo confirmarContraseña sea igual a contraseña
+    const confirmarContraseña = document.getElementById("confirmarContraseña").value;
+
+    if (confirmarContraseña !== contraseña) {
+        alert("Las contraseñas no coinciden");
+        return;
+    }
+
+//Capturar registro ingresado
+const registro = {
         nombre: document.getElementById("nombre").value,
         apellido: document.getElementById("apellido").value,
         correo: document.getElementById("correo").value,
@@ -262,6 +286,22 @@ var datosExistentes = localStorage.getItem('registro');
     document.getElementById(`formularioRegistro`).reset(); //Reseteo del formulario
 });
 
+//Instalación de una API de verficación de email
+const apiDireccion = 'https://open.kickbox.com/v1/disposable/';
+
+fetch(apiDireccion)
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('No se cargó la API');
+    }
+    return response.json();
+  })
+  .then(data => {
+        console.log(data);
+  })
+  .catch(error => {
+      console.error(error);
+  });
 
 
 
