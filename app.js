@@ -1,6 +1,6 @@
 //CARRITO
 //Variable que mantiene el estado visible del carrito
-
+/*
 var carritoVisible = false;
 
 //Espermos que todos los elementos de la pàgina cargen para ejecutar el script
@@ -41,7 +41,7 @@ function ready(){
     }
 
     //Agregamos funcionalidad al botón comprar
-    document.getElementsByClassName('btn-pagar')[0].addEventListener('click',pagarClicked)
+    //document.getElementsByClassName('btn-pagar')[0].addEventListener('click',pagarClicked)
 }
 //Eliminamos todos los elementos del carrito y lo ocultamos
 function pagarClicked(){
@@ -70,9 +70,9 @@ function agregarAlCarritoClicked(event){
 
 let cartIcon = document.querySelector("#cart-icon");
 
-cartIcon.onclick = () => {
-hacerVisibleCarrito();
-};
+//cartIcon.onclick = () => {
+//    hacerVisibleCarrito();
+//};
 
 
 //Funcion que hace visible el carrito
@@ -204,10 +204,11 @@ function actualizarTotalCarrito(){
     document.getElementsByClassName('carrito-precio-total')[0].innerText = '$'+total.toLocaleString("es") + ",00";
 
 }
-
+*/
 //FORMULARIO 
 
 // Evento focus en el primer campo del formulario en el campo nombre cuando se carga el HTML
+
 const campoNombre = document.getElementById("nombre");
 
 window.onload = function ()
@@ -236,7 +237,7 @@ document.getElementById('formularioRegistro').addEventListener('submit',async fu
         method: 'POST',
         headers: {
             'content-type': 'application/x-www-form-urlencoded',
-            'X-RapidAPI-Key': '52bdfcdae1msh76201ef319ea9dfp1784e8jsn97085d9a66f5',
+            'X-RapidAPI-Key': '8615d0b42bmsh59209332948589cp119db4jsn792a3823fc9a',
             'X-RapidAPI-Host': 'email-validator8.p.rapidapi.com'
         },
         body: new URLSearchParams({
@@ -301,6 +302,9 @@ var datosExistentes = localStorage.getItem('registro');
     console.log(datos);
     document.getElementById(`formularioRegistro`).reset(); //Reseteo del formulario
 });
+
+
+
 
 
 
