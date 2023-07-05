@@ -1,6 +1,6 @@
 //CARRITO
 //Variable que mantiene el estado visible del carrito
-/*
+
 var carritoVisible = false;
 
 //Espermos que todos los elementos de la pàgina cargen para ejecutar el script
@@ -204,7 +204,7 @@ function actualizarTotalCarrito(){
     document.getElementsByClassName('carrito-precio-total')[0].innerText = '$'+total.toLocaleString("es") + ",00";
 
 }
-*/
+
 //FORMULARIO 
 
 // Evento focus en el primer campo del formulario en el campo nombre cuando se carga el HTML
@@ -261,6 +261,7 @@ document.getElementById('formularioRegistro').addEventListener('submit',async fu
 
     if (contraseña.length < 8) {
         alert("La contraseña debe tener al menos 8 caracteres");
+        console.log("El registro no ha sido guardado exitosamente, corregir contraseña");
     }
 
     //Verficar que el campo confirmarContraseña sea igual a contraseña
@@ -268,38 +269,45 @@ document.getElementById('formularioRegistro').addEventListener('submit',async fu
 
     if (confirmarContraseña !== contraseña) {
         alert("Las contraseñas no coinciden");
+        console.log("El registro no ha sido guardado exitosamente, contraseñas no son iguales");
     }
 
 //Capturar registro ingresado
-const registro = {
-        nombre: document.getElementById("nombre").value,
-        apellido: document.getElementById("apellido").value,
-        correo: document.getElementById("correo").value,
-        contraseña: document.getElementById("contraseña").value,
-        confirmarContraseña: document.getElementById("confirmarContraseña").value,
-    };
 
-var datosExistentes = localStorage.getItem('registro');
-  
-    
-//Procedimiento con un condicional que verifica si se agregó un nuevo registro y si lo encuentra que haga un push 
-//que agregué el nuevo array 
-    if(datosExistentes){
-        var datos = JSON.parse(datosExistentes);
-        datos.usuarios.push(registro);
-    }else{
-        var datos = {
-            usuarios: [registro]
-        }
-    }
-
-    //Pasa el nuevo registro de JSON a string para que se visualize    
-    localStorage.setItem('registro',JSON.stringify(datos));
 
     //Mensaje de comprobación 
-    console.log("El registro ha sido guardado exitosamente");
-    console.log(datos);
-    document.getElementById("formularioRegistro").reset(); //Reseteo del formulario
+    if (contraseña.length > 8 && confirmarContraseña === contraseña){
+        const registro = {
+            nombre: document.getElementById("nombre").value,
+            apellido: document.getElementById("apellido").value,
+            correo: document.getElementById("correo").value,
+            contraseña: document.getElementById("contraseña").value,
+            confirmarContraseña: document.getElementById("confirmarContraseña").value,
+        };
+    
+    var datosExistentes = localStorage.getItem('registro');
+      
+        
+    //Procedimiento con un condicional que verifica si se agregó un nuevo registro y si lo encuentra que haga un push 
+    //que agregué el nuevo array 
+        if(datosExistentes){
+            var datos = JSON.parse(datosExistentes);
+            datos.usuarios.push(registro);
+        }else{
+            var datos = {
+                usuarios: [registro]
+            }
+        }
+    
+        //Pasa el nuevo registro de JSON a string para que se visualize    
+        localStorage.setItem('registro',JSON.stringify(datos));
+        console.log(datos);
+        document.getElementById("formularioRegistro").reset(); //Reseteo del formulario
+         console.log("El registro ha sido guardado exitosamente");
+
+
+    }
+
 });
 
 
