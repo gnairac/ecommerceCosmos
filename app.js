@@ -249,9 +249,9 @@ document.getElementById('formularioRegistro').addEventListener('submit',async fu
         const response = await fetch(url, options);
         const result = await response.text();
         console.log(result);
-        if (result === "true") {
-            alert("El email es válido");
-        }
+        // if (result === "true") {
+        //     alert("El email es válido");
+        // }
     } catch (error) {
         console.error(error);
     }
