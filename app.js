@@ -249,18 +249,18 @@ document.getElementById('formularioRegistro').addEventListener('submit',async fu
         const response = await fetch(url, options);
         const result = await response.text();
         console.log(result);
+        if (result === "true") {
+            alert("El email es válido");
+        }
     } catch (error) {
         console.error(error);
     }
-    if (result === "true") {
-        alert("El email es válido");
-    }
+   
     //Verificar que la contraseña tenga un mínimo de 8 caracteres
     const contraseña = document.getElementById("contraseña").value;
 
     if (contraseña.length < 8) {
         alert("La contraseña debe tener al menos 8 caracteres");
-        return;
     }
 
     //Verficar que el campo confirmarContraseña sea igual a contraseña
@@ -268,7 +268,6 @@ document.getElementById('formularioRegistro').addEventListener('submit',async fu
 
     if (confirmarContraseña !== contraseña) {
         alert("Las contraseñas no coinciden");
-        return;
     }
 
 //Capturar registro ingresado
@@ -300,7 +299,7 @@ var datosExistentes = localStorage.getItem('registro');
     //Mensaje de comprobación 
     console.log("El registro ha sido guardado exitosamente");
     console.log(datos);
-    document.getElementById(`formularioRegistro`).reset(); //Reseteo del formulario
+    document.getElementById("formularioRegistro").reset(); //Reseteo del formulario
 });
 
 
