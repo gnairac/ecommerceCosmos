@@ -141,10 +141,6 @@ li a:hover {
     color: rgb(194, 156, 236);
 }
 
-#check {
-    display: none;
-}
-
 /*Estilo sub-menu*/
 nav ul ul {
     display: none;

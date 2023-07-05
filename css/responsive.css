@@ -425,6 +425,13 @@
         margin-top: -112rem;
         margin-left: 2rem;
     }    
+    .contenedorCarrito{
+        max-width: 70rem;
+     }
+ 
+     .carrito{
+        max-width: 40rem;
+     }
 }
 
 
@@ -483,6 +490,8 @@
     #check:checked ~ .nav-menu li{
         display: block;
     }
+
+
     
     .nav-menu{
         display:block;
@@ -721,6 +730,15 @@
         display: block;
         margin: 3rem 2rem 2rem 2rem;
     }
+
+    .contenedorCarrito{
+        max-width: 58rem;
+     }
+
+ 
+     .carrito{
+        max-width: 45rem;
+     }
 }
 
  
@@ -848,6 +866,14 @@
         display: block;
         margin: 3rem 5rem 2rem 5rem;      
     }
+
+    .contenedorCarrito{
+        max-width: 70rem;
+     }
+ 
+     .carrito{
+        max-width: 40rem;
+     }
 }
 
 @media (min-width: 900px) and (max-width: 1024px) 
@@ -1009,6 +1035,14 @@
     #pasarela {
         display: block;
     }
+
+    .contenedorCarrito{
+       max-width: 70rem;
+    }
+
+    .carrito{
+       max-width: 40rem;
+    }
 }
 
 @media (min-width: 1024px) and (max-width: 1200px) 
@@ -1119,7 +1153,4 @@
         max-width: 100rem;
     }
 
-    .carrito{
-        width: 30rem;
-    }
 }
