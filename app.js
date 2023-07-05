@@ -241,7 +241,7 @@ document.getElementById('formularioRegistro').addEventListener('submit',async fu
             'X-RapidAPI-Host': 'email-validator8.p.rapidapi.com'
         },
         body: new URLSearchParams({
-            email: document.getElementById("correo").value
+            email: document.getElementById("email").value
         })
     };
     
