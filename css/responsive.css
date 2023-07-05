@@ -1114,4 +1114,12 @@
         width: 40rem;    
         height: 40rem;
     }
+
+    .contenedorCarrito{
+        max-width: 100rem;
+    }
+
+    .carrito{
+        width: 30rem;
+    }
 }

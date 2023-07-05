@@ -1,5 +1,5 @@
 .contenedorCarrito{
-    max-width: 120rem;
+    width: 128rem;
     padding: 1rem;
     margin: 4rem 10rem;
     display: flex;
@@ -77,8 +77,7 @@
 /* Estilos Carrito */
 .carrito{
     border: 0.1rem solid #666;
-    width: 35%;
-    margin-top: 3rem;
+    width: 45rem;
     border-radius: 1rem;
     overflow: hidden;
     margin-bottom: auto;

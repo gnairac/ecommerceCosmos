@@ -41,7 +41,7 @@ function ready(){
     }
 
     //Agregamos funcionalidad al botón comprar
-    //document.getElementsByClassName('btn-pagar')[0].addEventListener('click',pagarClicked)
+    document.getElementsByClassName('btn-pagar')[0].addEventListener('click',pagarClicked)
 }
 //Eliminamos todos los elementos del carrito y lo ocultamos
 function pagarClicked(){
@@ -209,11 +209,11 @@ function actualizarTotalCarrito(){
 
 // Evento focus en el primer campo del formulario en el campo nombre cuando se carga el HTML
 
-const campoNombre = document.getElementById("nombre");
+let campoNombre = document.getElementById("nombre");
 
 window.onload = function ()
 {
-    campoNombre.focus ();
+    campoNombre.focus();
 };
 
 // Obtener Base de datos de JSON
