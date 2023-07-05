@@ -105,7 +105,7 @@ nav {
     transform: scale(1.2);
 }
 
-nav ul {
+nav .menu {
     margin-left: 20rem;
     padding-top: 3rem;
 }
@@ -221,7 +221,7 @@ form input {
 }
 
 
-form {
+form{
     float: right;
     margin-top: 2rem;
     margin-left: 0.5rem;

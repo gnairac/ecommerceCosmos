@@ -41,8 +41,8 @@
 
     #check:checked ~ .nav-menu{
         height: 35vh;
-        width: 50%;
-        right:0;
+        width: 100%;
+        /* right:0; */
         z-index: 1;
     }
     
@@ -80,7 +80,7 @@
         transition: .3s;
     }
 
-    form {
+    form .buscador{
         display: none;
     }
 
@@ -457,9 +457,9 @@
         display: none;
     }
 
-    nav ul {
+    /* nav ul {
         margin-left: 16rem;
-    }
+    } */
 
     nav ul li {
         margin: 0.5rem 0rem 0.5rem 0rem;
@@ -474,10 +474,9 @@
     }
 
     #check:checked ~ .nav-menu{
-        height: 26vh;
-        width: 50%;
-        right:0;
-        padding-top: 0;
+        height: 35vh;
+        width: 100%;
+        /* right:0; */
         z-index: 1;
     }
     
@@ -490,9 +489,10 @@
         position:absolute;
         top: 8rem;
         height: 0;
-        background: rgba(94, 3, 143, 0.9);
+        background: rgba(94, 3, 143, 0.9);;
         text-align: center;
         transition: all .10s;
+        padding-top: 0;
     }
     
     .nav-menu li{
@@ -514,7 +514,7 @@
         transition: .3s;
     }
 
-    form {
+    form .buscador{
         display: none;
     }
 
@@ -763,7 +763,7 @@
         font-size: 2rem;
     }
 
-    form {
+    form .buscador{
         display: none;
     }
 
@@ -889,7 +889,7 @@
         font-size: 2rem;
     }
 
-    form {
+    form .buscador{
         display: none;
     }
 
@@ -1032,7 +1032,6 @@
 
     form {
         display: block;
-        width: 18rem;
     }
 
     input {
@@ -1040,7 +1039,7 @@
     }
 
     .lupa {
-        width: 15%;
+        width: 1.5rem;
     }
 
     .botonBanner {
