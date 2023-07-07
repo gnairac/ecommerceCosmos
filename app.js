@@ -234,7 +234,7 @@ document.getElementById('formularioRegistro').addEventListener('submit',async fu
     //API para validar el email
     const url = 'https://email-validator8.p.rapidapi.com/api/v2.0/email';
     const options = {
-        method: '',
+        method: 'POST',
         headers: {
             'content-type': 'application/x-www-form-urlencoded',
             'X-RapidAPI-Key': '8615d0b42bmsh59209332948589cp119db4jsn792a3823fc9a',
@@ -272,18 +272,19 @@ document.getElementById('formularioRegistro').addEventListener('submit',async fu
         console.log("El registro no ha sido guardado exitosamente, contraseñas no son iguales");
     }
 
+    const registro = {
+        nombre: document.getElementById("nombre").value,
+        apellido: document.getElementById("apellido").value,
+        correo: document.getElementById("correo").value,
+        contraseña: document.getElementById("contraseña").value,
+        confirmarContraseña: document.getElementById("confirmarContraseña").value,
+    };
 //Capturar registro ingresado
 
 
     //Mensaje de comprobación 
     if (contraseña.length > 8 && confirmarContraseña === contraseña){
-        const registro = {
-            nombre: document.getElementById("nombre").value,
-            apellido: document.getElementById("apellido").value,
-            correo: document.getElementById("correo").value,
-            contraseña: document.getElementById("contraseña").value,
-            confirmarContraseña: document.getElementById("confirmarContraseña").value,
-        };
+       
     
     var datosExistentes = localStorage.getItem('registro');
       
