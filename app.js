@@ -5,7 +5,7 @@ var carritoVisible = false;
 
 //Espermos que todos los elementos de la pàgina cargen para ejecutar el script
 if(document.readyState == 'loading'){
-    document.addEventListener('DOMContentLoaded', ready)
+    document.addEventListener('DOMContentLoaded', ready);
 }else{
     ready();
 }
@@ -41,7 +41,7 @@ function ready(){
     }
 
     //Agregamos funcionalidad al botón comprar
-    document.getElementsByClassName('btn-pagar')[0].addEventListener('click',pagarClicked)
+    document.getElementsByClassName('btn-pagar')[0].addEventListener('click',pagarClicked);
 }
 //Eliminamos todos los elementos del carrito y lo ocultamos
 function pagarClicked(){
@@ -234,7 +234,7 @@ document.getElementById('formularioRegistro').addEventListener('submit',async fu
     //API para validar el email
     const url = 'https://email-validator8.p.rapidapi.com/api/v2.0/email';
     const options = {
-        method: 'POST',
+        method: '',
         headers: {
             'content-type': 'application/x-www-form-urlencoded',
             'X-RapidAPI-Key': '8615d0b42bmsh59209332948589cp119db4jsn792a3823fc9a',
