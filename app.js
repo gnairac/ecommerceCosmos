@@ -70,9 +70,9 @@ function agregarAlCarritoClicked(event){
 
 let cartIcon = document.querySelector("#cart-icon");
 
-//cartIcon.onclick = () => {
-//    hacerVisibleCarrito();
-//};
+cartIcon.onclick = () => {
+    hacerVisibleCarrito();
+};
 
 
 //Funcion que hace visible el carrito
@@ -305,10 +305,7 @@ document.getElementById('formularioRegistro').addEventListener('submit',async fu
         console.log(datos);
         document.getElementById("formularioRegistro").reset(); //Reseteo del formulario
          console.log("El registro ha sido guardado exitosamente");
-
-
-    }
-
+    }   
 });
 
 
