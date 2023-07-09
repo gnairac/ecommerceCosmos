@@ -70,9 +70,9 @@ function agregarAlCarritoClicked(event){
 
 let cartIcon = document.querySelector("#cart-icon");
 
-cartIcon.onclick = () => {
-    hacerVisibleCarrito();
-};
+//cartIcon.onclick = () => {
+//    hacerVisibleCarrito();
+//};
 
 
 //Funcion que hace visible el carrito
@@ -232,29 +232,43 @@ document.getElementById('formularioRegistro').addEventListener('submit',async fu
     console.log("Formulario enviado");
 
     //API para validar el email
-    const url = 'https://email-validator8.p.rapidapi.com/api/v2.0/email';
-    const options = {
-        method: 'POST',
-        headers: {
-            'content-type': 'application/x-www-form-urlencoded',
-            'X-RapidAPI-Key': '8615d0b42bmsh59209332948589cp119db4jsn792a3823fc9a',
-            'X-RapidAPI-Host': 'email-validator8.p.rapidapi.com'
-        },
-        body: new URLSearchParams({
-            email: document.getElementById("email").value
-        })
-    };
+
+    let email = document.getElementById("email").value;
+
+    var requestOptions = {
+        method: 'GET',
+        redirect: 'follow'
+      };
     
-    try {
-        const response = await fetch(url, options);
-        const result = await response.text();
-        console.log(result);
+      fetch(`https://api.eva.pingutil.com/email?email=${email}`, requestOptions)
+        .then(response => response.text())
+        .then(result => console.log(result))
+        .catch(error => console.log('error', error));
+
+
+    // const url = 'https://email-validator8.p.rapidapi.com/api/v2.0/email';
+    // const options = {
+    //     method: 'POST',
+    //     headers: {
+    //         'content-type': 'application/x-www-form-urlencoded',
+    //         'X-RapidAPI-Key': '8615d0b42bmsh59209332948589cp119db4jsn792a3823fc9a',
+    //         'X-RapidAPI-Host': 'email-validator8.p.rapidapi.com'
+    //     },
+    //     body: new URLSearchParams({
+    //         email: document.getElementById("email").value
+    //     })
+    // };
+    
+    // try {
+    //     const response = await fetch(url, options);
+    //     const result = await response.text();
+    //     console.log(result);
         // if (result === "true") {
         //     alert("El email es válido");
         // }
-    } catch (error) {
-        console.error(error);
-    }
+    // } catch (error) {
+    //     console.error(error);
+    // }
    
     //Verificar que la contraseña tenga un mínimo de 8 caracteres
     const contraseña = document.getElementById("contraseña").value;
@@ -305,7 +319,10 @@ document.getElementById('formularioRegistro').addEventListener('submit',async fu
         console.log(datos);
         document.getElementById("formularioRegistro").reset(); //Reseteo del formulario
          console.log("El registro ha sido guardado exitosamente");
-    }   
+
+
+    }
+
 });
 
 
