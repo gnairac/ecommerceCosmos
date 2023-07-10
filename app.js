@@ -40,8 +40,18 @@ function ready(){
         button.addEventListener('click', agregarAlCarritoClicked);
     }
 
+    document.getElementsByClassName('botonCierreCarrito').addEventListener('click',cerrarCarritoClicked);
     //Agregamos funcionalidad al botón comprar
     document.getElementsByClassName('btn-pagar')[0].addEventListener('click',pagarClicked);
+}
+
+function cerrarCarritoClicked(){
+    var carritoItems = document.getElementsByClassName('carrito-items')[0];
+    while (carritoItems.hasChildNodes()){
+        carritoItems.removeChild(carritoItems.firstChild)
+    }
+    actualizarTotalCarrito();
+    ocultarCarrito();
 }
 //Eliminamos todos los elementos del carrito y lo ocultamos
 function pagarClicked(){
@@ -233,7 +243,7 @@ document.getElementById('formularioRegistro').addEventListener('submit',async fu
 
     //API para validar el email
 
-    let email = document.getElementById("email").value;
+     email = document.getElementById("email").value;
 
     var requestOptions = {
         method: 'GET',

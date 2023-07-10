@@ -7,6 +7,23 @@
     contain: paint;
 }
 
+.botonCierreCarrito{
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+    color: #fff;
+    font-size: 2rem;
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+    background: transparent;
+    z-index: 20;
+    }
+
 /* Estilos sección contenedor de items*/
 .contenedorCarrito .contenedor-items{
     display: grid;
