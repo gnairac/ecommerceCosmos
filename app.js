@@ -40,16 +40,15 @@ function ready(){
         button.addEventListener('click', agregarAlCarritoClicked);
     }
 
-    document.getElementsByClassName('botonCierreCarrito').addEventListener('click',cerrarCarritoClicked);
+    
     //Agregamos funcionalidad al botón comprar
     document.getElementsByClassName('btn-pagar')[0].addEventListener('click',pagarClicked);
+
+    document.getElementsByClassName('botonCierreCarrito').addEventListener('click',cerrarCarritoClicked);
 }
 
 function cerrarCarritoClicked(){
-    var carritoItems = document.getElementsByClassName('carrito-items')[0];
-    while (carritoItems.hasChildNodes()){
-        carritoItems.removeChild(carritoItems.firstChild)
-    }
+    
     actualizarTotalCarrito();
     ocultarCarrito();
 }
